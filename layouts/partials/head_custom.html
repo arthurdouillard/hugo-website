@@ -1,0 +1,19 @@
+{{ with .Params.Title }}
+<meta name="twitter:title" content="{{ . }}" />
+{{ end }}
+
+{{ with .Params.Summary }}
+<meta name="twitter:description" content="{{ . }}" />
+{{ end }}
+
+{{ with .Params.Thumbnail }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{ end }}
+
+{{ with .Params.Thumbnail }}
+<meta property="og:image" content={{ . | absURL }}/>
+{{ end }}
+
+{{ with .Params.Summary }}
+<meta property="og:description" content="{{ . }}"/>
+{{ end }}

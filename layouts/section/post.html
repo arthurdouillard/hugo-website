@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<section class="home-section">
+  <div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-md-4 section-heading">
+            <h1>{{ .Title | default (i18n "posts") }}</h1>
+        </div>
+
+        <div class="col-xs-12 col-md-8">
+            {{ $paginator := .Paginate .Data.Pages }}
+            {{ range $paginator.Pages }}
+              {{ $params := dict "post" . }}
+              {{ if eq $.Params.list_format 0 }}
+                {{ partial "post_li_simple" $params }}
+              {{ else }}
+                {{ partial "post_li_detailed" $params }}
+              {{ end }}
+            {{ end }}
+
+            {{ partial "pagination" . }}
+        </div>
+      </div>
+
+  </div>
+</section>
+
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

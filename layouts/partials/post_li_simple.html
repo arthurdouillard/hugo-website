@@ -1,0 +1,11 @@
+{{ $post := .post }}
+
+<div class="pub-list-item" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  <i class="fa fa-newspaper-o pub-icon" aria-hidden="true"></i>
+  <span class="talk-metadata">
+    {{ $post.Date.Format "January 2006" }}&nbsp;&middot;&nbsp;
+  </span>
+  <a href="{{ $post.Permalink }}" itemprop="url">
+    <span itemprop="headline">{{ $post.Title }}</span>
+  </a>
+</div>

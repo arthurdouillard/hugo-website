@@ -1,5 +1,6 @@
 +++
 title = "How To Read A Paper"
+blog = true
 
 date = 2018-02-06
 draft = false

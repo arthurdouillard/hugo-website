@@ -1,5 +1,6 @@
 +++
 title = "Deep Learning Scaling Is Predictable, Empirically"
+blog = true
 
 date = 2018-04-20
 draft = false

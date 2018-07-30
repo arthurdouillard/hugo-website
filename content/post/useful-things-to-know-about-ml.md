@@ -1,5 +1,6 @@
 +++
 title = "A Few Useful Things To Know About Machine Learning"
+blog = true
 
 date = 2018-02-06
 draft = false

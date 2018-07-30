@@ -1,5 +1,6 @@
 +++
 title = "Densely Connected Convolutional Networks"
+blog = true
 
 date = 2018-05-07
 draft = false

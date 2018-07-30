@@ -1,5 +1,6 @@
 +++
 title = "Selective Search for Object Recognition"
+blog = true
 
 date = 2018-03-09
 draft = false

@@ -1,5 +1,6 @@
 +++
 title = "Fast and Faster Region-based Convolutional Network"
+blog = true
 
 date = 2018-03-26
 draft = false

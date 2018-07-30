@@ -23,7 +23,7 @@ preserveTaxonomyNames = true
 paginate = 30
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "arthur_douillard"
+disqusShortname = "arthurdouillard"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = "UA-102629480-1"
@@ -171,7 +171,7 @@ enableGitInfo = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
+  custom_css = ["search_bar.css"]
   custom_js  = []
 
   # Publication types.
@@ -319,14 +319,14 @@ enableGitInfo = false
   # Search provider:
   #   0: No search engine
   #   1: Algolia (https://www.algolia.com)
-  engine = 0
+  engine = 1
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
   [params.search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
+    app_id = "NX60KRWN2S"
+    api_key = "3693810b60d96ef8fdd9bc31f09873e6"
+    index_name = "Posts"
 
 # Taxonomies.
 [taxonomies]

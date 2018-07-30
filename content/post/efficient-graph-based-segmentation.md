@@ -1,5 +1,6 @@
 +++
 title = "Efficient Graph-Based Segmentation"
+blog = true
 
 date = 2018-03-07
 draft = false

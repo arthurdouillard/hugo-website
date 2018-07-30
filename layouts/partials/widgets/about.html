@@ -66,7 +66,13 @@
             <i class="fa-li fa fa-briefcase"></i>
             <div class="description">
               <p class="course">{{ .role }}</p>
+              {{ if .url }}
+              <a href="{{ .url }}">
+                <p class="institution">{{ .company }}</p>
+              </a>
+              {{ else }}
               <p class="institution">{{ .company }}</p>
+              {{ end }}
             </div>
           </li>
           {{ end }}
@@ -83,7 +89,13 @@
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
+              {{ if .url }}
+              <a href="{{ .url }}">
+                <p class="institution">{{ .institution }}</p>
+              </a>
+              {{ else }}
               <p class="institution">{{ .institution }}</p>
+              {{ end }}
             </div>
           </li>
           {{ end }}

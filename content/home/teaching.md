@@ -17,10 +17,10 @@ weight = 60
 
 #### Teacher Assistant at EPITA
 
-From January 2017 to January 2018 in inverse chronological order:
+From January 2017 to January 2018:
 
-- `GLP1`: C programming
-- `GLP1`: Unix / Shell / Algorithm theory
-- `GLP2`: Java programming
-- `GLP2`: SQL (Postgres) programming
-- `GLP2`: Web programming and project management
+- C programming
+- Unix / Shell / Algorithm theory
+- Java programming
+- SQL (Postgres) programming
+- Web programming and project management

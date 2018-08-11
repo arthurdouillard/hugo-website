@@ -8,20 +8,32 @@ title = "Talks"
 weight = 2
 
 [[talks.talks]]
+  title = "Lowshots learning"
+  place = "Dataiku"
+  date = "August 2018"
+  links = [
+    { link = "lowshots-learning.pdf", link_label = "PDF", ext = false },
+  ]
+
+
+
+[[talks.talks]]
   title = "NATO Innovation Challenge pitch"
   place = "École Militaire"
   date = "May 2018"
-  link = "https://innovationhub-act.org/news/innovation-challenge-winners"
-  link_label = "URL"
-  ext  = true
+  links = [
+    { link = "https://innovationhub-act.org/news/innovation-challenge-winners", link_label = "URL", ext  = true },
+  ]
+
 
 [[talks.talks]]
   title = "Object Detection with Deep Learning"
   place = "Dataiku"
   date = "April 2018"
-  link = "object_detection.pdf"
-  link_label = "PDF"
-  ext = false
+  links = [
+    { link = "object_detection.pdf", link_label = "PDF", ext = false }
+  ]
+
 
 [[talks.talks]]
   title = "State of the FoodTech in France"

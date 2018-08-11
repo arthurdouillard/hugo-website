@@ -34,12 +34,16 @@ filter_default = 0
   tag = "*"
 
 [[filter]]
-  name = "Deep Learning"
-  tag = "Deep Learning"
+  name = "Data Science"
+  tag = "data-science"
 
 [[filter]]
-  name = "Other"
-  tag = "Demo"
+  name = "Programming"
+  tag = "programming"
+
+[[filter]]
+  name = "Misc"
+  tag = "misc"
 
 +++
 

@@ -17,24 +17,24 @@ image = ""
 caption = ""
 +++
 
-Deep Neural Networks (DNNs) are notorious for requiring less features engineering than
-Machine Learning algorithms. For example convolutional networks learn itself
-the right convolution kernels to apply on the image. No need of carefully
+Deep Neural Networks (DNNs) are notorious for requiring less feature engineering than
+Machine Learning algorithms. For example convolutional networks learn by themselves
+the right convolution kernels to apply on an image. No need of carefully
 handcrafted kernels.
 
-However a common point to all kinds of neural networks is the **need to normalize**.
+However a common point to all kinds of neural networks is the **need of normalization**.
 Normalizing is often done on the input, but it can also take place inside the
 network. In this article I'll try to describe what the literature is saying about
 this.
 
 This article is not exhaustive but it tries to cover the major algorithms. If
-you feel I miss something important, tell me!
+you feel I missed something important, tell me!
 
 ### Normalizing the input
 
 It is *extremely* common to normalize the input
 [(lecun-98b)](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf), especially
-for computer vision task. Three normalization schemes are often seen:
+for computer vision tasks. Three normalization schemes are often seen:
 
 1. Normalizing the pixel values between 0 and 1:
 
@@ -49,7 +49,7 @@ img /= 127.5
 img -= 1.
 ```
 
-3. Normalizing according to the dataset means & standard deviation (as [Torch does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L52-L55)):
+3. Normalizing according to the dataset mean & standard deviation (as [Torch does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L52-L55)):
 
 ```python
 img /= 255.
@@ -63,15 +63,16 @@ for i in range(3): # Considering an ordering NCHW (batch, channel, height, width
 
 Why is it recommended? Let's take a fully connected layer, where:
 
-$$X \cdot W = f$$
+$$X \cdot W = Y$$
 
-During the backpropagation, the partial derivative of $f$ w.r.t the weights $w$ is:
+Consider that we have a loss function $L$ that takes as inputs the true targets
+and the predicted targets $Y$. During the backpropagation, the partial derivative of $L$ w.r.t the weights $W$ is:
 
-$$\frac{\partial f}{\partial w} = \nabla f \cdot X^T$$
+$$\frac{\partial L}{\partial W} =  X^T\frac{\partial L}{\partial Y}$$
 
 The scale of the data has an effect on the magnitude of the gradient for
 the weights. If the gradient is very big, you should reduce the learning rate.
-However you could have various gradient magnitude in a same batch. Normalizing
+However you could have various gradient magnitudes in a same batch. Normalizing
 the image to smaller pixel values is a cheap price to pay while making easier to
 tune an optimal learning rate for input images.
 
@@ -102,7 +103,7 @@ The batch statistics are computed for a whole channel:
 
 $\gamma$ and $\beta$ are essential because they enable the BN to represent
 the identity transform if needed. If it couldn't, the resulting BN's transformation
-(with a mean of 0 and a variance of 1 fed to a sigmoid non-linearity would
+(with a mean of 0 and a variance of 1) fed to a sigmoid non-linearity would
 be constrained to its linear regime.
 
 While during training the mean and standard deviation are computed on the batch,
@@ -110,10 +111,10 @@ during test time BN uses the whole dataset statistics using a moving average/std
 
 Batch Normalization has showed a considerable training acceleration to existing
 architectures and is now an almost de facto layer. It has however for weakness
-to use the batch statistics at training time. With small batches or with a dataset
+to use the batch statistics at training time: With small batches or with a dataset
 non [i.i.d](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)
-it shows weak performance. In addition of that, the mean and std during training
-and test time can be very different, this can lead to difference of performance
+it shows weak performance. In addition to that, the mean and std during training
+and test time can be very different, this can lead to a difference of performance
 between the two modes.
 
 ### 1.1. Batch ReNormalization
@@ -155,9 +156,9 @@ didn't produce extremely different results:
 
 {{< figure src="/figures/cmp_icf.png" caption="*Comparison between standard net, net with BN, and net with noisy BN.*">}}
 
-On the other they found that the Batch Normalization improved the
+On the other hand they found that the Batch Normalization improved the
 [Lipschitzness](https://en.wikipedia.org/wiki/Lipschitz_continuity) of the loss
-function. In simpler term, the loss is smoother, and thus its gradient also.
+function. In simpler term, the loss is smoother, and thus its gradient as well.
 
 {{< figure src="/figures/smoothed_loss.png" caption="*Figure 3: Loss with and without Batch Normalization.*">}}
 

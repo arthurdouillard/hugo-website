@@ -10,7 +10,7 @@ authors = []
 tags = []
 summary = "Imagine you’re in a landlocked country, and an infection has spread. The gouvernement has fallen, and rebels are roaming the country. If you’re the armed forces in this scenario, how do you make decisions in this environment? How can you fully understand the situation at hand?"
 
-thumbnail = "/figures/normalization.png"
+thumbnail = "/figures/nato_result_zoom.png"
 
 [header]
 image = ""

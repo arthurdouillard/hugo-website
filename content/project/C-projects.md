@@ -29,13 +29,13 @@ caption = ""
 +++
 
 Engineering schools last 3 years in France. Before these years students learn
-for two years a very broad science curriculum covering mathematics, algo,
+for two years a broad science curriculum covering mathematics, algo,
 physics, electronics...
 The three years of engineering cover a more specialized subject, for me it was
 computer science.
 
-The first year of my engineering school, EPITA, is very intensive. We learn
-many things about low-level programming and almost weekly have hackathons the
+The first year of my engineering school, EPITA, is intensive. We learn
+many different subjects about low-level programming and almost weekly have hackathons the
 whole weekend. During the days we study the theory of computer science (language
 theory, compiler, graph, algo, some maths, etc.), and during the nights we code.
 
@@ -47,7 +47,7 @@ In this C project I had to learn how to use `mmap` to read ISO files (such as
 a Ubuntu image). The goal was to provide a CLI tool to navigate, and read files
 stored in the ISO.
 
-While it may sound obvious to me now, it was very interesting to discover how the
+While it may sound obvious to me now, it was interesting to discover how the
 data can be stored in memory, and how simple pointer arithmetic can go a long way.
 
 # Make-like
@@ -57,7 +57,7 @@ program dependencies and to facilitate a program compilation.
 
 It was interesting for both reasons:
 
-- Learn to parse file, the structure is quite simple but still harder than a csv
+- Learn to parse file, the structure is simple but still harder than a csv
 file of course.
 - Learn all the tricks `make` have, and it has many.
 
@@ -67,8 +67,8 @@ For this C project I wrote a naive implementation of `malloc`. For those who don
 know, `malloc` is used in C program (and a lot of binaries like `ls`) to
 allocate memory.
 
-To allocate memory, I had to map one or several pages. Those pages could be filled
-completely or splitted into several chunks. It's enlightening to understand
+To allocate memory, I had to map one or several pages. Those pages could be fully
+filled or split into several chunks. It's enlightening to understand
 how a program uses the memory, and to see all the tricks to allocate it more
 efficiently than a simple first-fit algo.
 

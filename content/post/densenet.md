@@ -27,15 +27,15 @@ This paper was awarded the [CVPR 2017](http://cvpr2017.thecvf.com/) Best Paper A
 ### Introduction
 
 **DenseNet** is a new CNN architecture that reached State-Of-The-Art (SOTA) results
-on classification datasets (CIFAR, SVHN, ImageNet) using few parameters.
+on classification datasets (CIFAR, SVHN, ImageNet) using less parameters.
 
-Thanks to its new use of residual it can be very deep and still be easy to
-optimize.
+Thanks to its new use of residual it can be deeper than the usual networks and
+still be easy to optimize.
 
 
 ### General Architecture
 
-DenseNet is composed of several **Dense blocks**. In those blocks, the layers are
+DenseNet is composed of **Dense blocks**. In those blocks, the layers are
 *densely* connected together: Each layer receive in input all previous layers
 output feature maps.
 
@@ -82,18 +82,18 @@ A transition layer is made of:
 Concatenating residuals instead of summing them has a downside when the model
 is very deep: It generates a lot of input channels!
 
-You may now wonder how could I say in the introduction that DenseNet has few
-parameters. There are two reasons:
+You may now wonder how could I say in the introduction that DenseNet has less
+parameters than an usual SotA networks. There are two reasons:
 
 First of all a DenseNet's convolution generates a low number of feature maps.
-The authors recommend 32 for optimal performance but shows SOTA results with as
-few as 12 output channels!
+The authors recommend 32 for optimal performance but shows SotA results with only
+12 output channels!
 
 The number of output feature maps of a layer is defined as the **growth
 rate**.
 
-DenseNet has lower need of of wide layers because as layers are densely connected
-there is few redundancy in the learned features. All layers of a same dense block
+DenseNet has lower need of wide layers because as layers are densely connected
+there is little redundancy in the learned features. All layers of a same dense block
 share a *collective knowledge*.
 
 > The growth rate regulates how much new information each layer contributes

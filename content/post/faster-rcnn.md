@@ -23,7 +23,7 @@ This post contains the notes taken from the following paper:
 
 - [Faster-RCNN](https://arxiv.org/abs/1506.01497) by Microsoft Research.
 
-Ross Girshick is a very influential researcher on object detection:
+Ross Girshick is an influential researcher on object detection:
 he has worked on RCNN, Fast{er}-RCNN, Yolo, RetinaNet...
 
 Fast-RCNN and Faster-RCNN are both incremental improvements on the original
@@ -51,14 +51,14 @@ from the feature map. However this box is proportionally scaled down:
 
 ![RoI Pooling](/figures/roi_pooling.svg)
 
-Objects have very different sizes, and so are the boxes extracted from the feature
+Objects have different sizes, and so are the boxes extracted from the feature
 maps. To normalize their size a max pooling is done. Note that it does not really
 matter if the height or width of the extracted box is not even:
 
 ![RoI pooling](/figures/roi_pooling2.svg)
 
 Those extracted fixed-size feature maps (one per filter per object) are then fed
-to several fully connected layers. At some point, the network split into two
+to fully connected layers. At some point, the network split into two
 sub-networks. One is designed to classify the class with a softmax activation.
 The other is a regressor with 4 values: The coordinates of the top-left point
 of the box and its width & height.
@@ -94,7 +94,7 @@ The authors used a layer of dimension 512 when the feature maps were originating
 from VGG16.
 
 Then the RPN uses a sliding window, moving all around the intermediate layers.
-At each location, several **anchors** are used. An anchor is simply a box of a
+At each location, **anchors** are used. An anchor is simply a box of a
 pre-defined size and shape. 9 different anchors exist: there are 3 different
 scales and 3 different ratios.
 
@@ -150,8 +150,8 @@ These two papers are incremental improvements of
 [RCNN](https://arxiv.org/abs/1311.2524). They introduce RoI pooling and Region
 Proposal Network.
 
-RoI pooling concept is now used in many models. [FashionNet](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Liu_DeepFashion_Powering_Robust_CVPR_2016_paper.pdf), a model to predict clothes' attributes uses a concept of *landmark pooling*
-to force model's *attention* on a particular cloth's trait.
+RoI pooling concept is also used in other models. [FashionNet](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Liu_DeepFashion_Powering_Robust_CVPR_2016_paper.pdf), a model to predict clothes' attributes uses a concept of
+*landmark pooling* to force model's *attention* on a particular cloth's trait.
 
 Region Proposal Network is now used in most object detection models, like
 the [Feature Pyramid Network](https://arxiv.org/abs/1612.03144).

@@ -29,9 +29,9 @@ I was also helped by the slides of Stanford's [CS231b](http://vision.stanford.ed
 object proposal used **Selective Search** that itself used **Efficient Graph-Based
 Segmentation**.
 
-The reason this segmentation was still very useful almost 10 years later is
-because the algorithm is fast, while remaining quite efficient.
-Its goal is to make a segmentation of various objects in an image.
+The reason this segmentation was still useful almost 10 years later is
+because the algorithm is fast, while remaining efficient.
+Its goal is to segment the objects in an image.
 
 # A Graph-Based Algorithm
 
@@ -102,7 +102,7 @@ components**.
 
 To summarize the predicate $D$: A large difference between two internally
 homogeneous components is evidence of a boundary between them. However, if the
-two components are internally very heterogeneous it would be harder to prove
+two components are internally heterogeneous it would be harder to prove
 a boundary. **Therefore *details* are ignored in high-variability regions but
 are preserved in low-variability regions**:
 
@@ -178,7 +178,7 @@ $S^m$ will neither be too fine nor too coarse.
 # Conclusion
 
 As you have seen, the algorithm of this paper is quite simple. What makes it
-very efficient is the various metrics and the predicate defined beforehand.
+efficient is the chosen metrics and the predicate defined beforehand.
 
 If you have read until the bottom of the page, congrats! To thank you, here is
 some demonstrations by the authors:

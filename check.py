@@ -22,11 +22,11 @@ if __name__ == '__main__':
         posts = sys.argv[1:]
 
     for p in posts:
-        print(p)
+        print('\n\n' + p)
 
-        print('## Check weasels words:')
+        print('\t## Check weasels words:')
         os.system('./bin/check_weasels.sh ' + p)
-        print('## Check passive voice:')
+        print('\t## Check passive voice:')
         os.system('./bin/check_passivevoice.sh ' + p)
-        print('## Check duplicates')
+        print('\t## Check duplicates')
         os.system('./bin/check_duplicates.pl ' + p)

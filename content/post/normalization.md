@@ -70,8 +70,8 @@ The partial derivative of $y$ for $w$ that we use during backpropagation is:
 $$\frac{\partial y}{\partial w} = X^T$$
 
 The scale of the data has an effect on the magnitude of the gradient for
-the weights. If the gradient is very big, you should reduce the learning rate.
-However you could have various gradient magnitudes in a same batch. Normalizing
+the weights. If the gradient is big, you should reduce the learning rate.
+However you usually have different gradient magnitudes in a same batch. Normalizing
 the image to smaller pixel values is a cheap price to pay while making easier to
 tune an optimal learning rate for input images.
 
@@ -112,9 +112,8 @@ Batch Normalization has showed a considerable training acceleration to existing
 architectures and is now an almost de facto layer. It has however for weakness
 to use the batch statistics at training time: With small batches or with a dataset
 non [i.i.d](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)
-it shows weak performance. In addition to that, the mean and std during training
-and test time can be very different, this can lead to a difference of performance
-between the two modes.
+it shows weak performance. In addition to that, the difference between training
+and test time of the mean and the std can be important, this can lead to a difference of performance between the two modes.
 
 ### 1.1. Batch ReNormalization
 
@@ -187,7 +186,7 @@ are computed differently.
 [(Ba et al, 2016)](https://arxiv.org/abs/1607.06450)'s layer norm (LN) normalizes
 each image of a batch independently using all the channels. The goal is have constant
 performance with a large batch or a single image. **It's used in recurrent neural
-networks** where the number of time steps can differ between several tasks.
+networks** where the number of time steps can differ between tasks.
 
 While all time steps share the same weights, each should have its own statistic.
 BN needs previously computed batch statistics, which would be impossible if there
@@ -241,12 +240,12 @@ $$y = \phi(\frac{W \cdot X}{\Vert W \Vert \Vert X \Vert})$$
 
 ### 4. Conclusion
 
-Batch normalization (BN) is still very represented among new architectures despite its
-defect: the dependence on the batch size. Batch renormalization (BR) fixes this problem
-by adding two new parameters to approximate instance statistics instead of batch
-statistics.
+Batch normalization (BN) is still the most represented method among new
+architectures despite its defect: the dependence on the batch size. Batch
+renormalization (BR) fixes this problem by adding two new parameters to
+approximate instance statistics instead of batch statistics.
 
-Layer norm (LN), instance norm (IN), and group norm (GN), are very similar to
+Layer norm (LN), instance norm (IN), and group norm (GN), are similar to
 BN. Their difference lie in the way statistics are computed.
 
 LN was conceived for RNNs, IN for style transfer, and GN for CNNs.

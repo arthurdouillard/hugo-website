@@ -22,11 +22,11 @@ This post contains the notes taken from the following paper:
 - [Deep Learning Scaling Is Predictable, Empirically](https://arxiv.org/abs/1712.00409)
 by Baidu Research.
 
-The last few years in Deep Learning have seen a rush to gigantism:
+The last years in Deep Learning have seen a rush to gigantism:
 
 - Models are becoming deeper and deeper from the 8 layers of [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 to the [1001-layer ResNet](https://arxiv.org/abs/1603.05027).
-- Training on huge dataset is way more quicker, ImageNet can now (with enough
+- Training on large dataset is way quicker, ImageNet can now (with enough
 computing power) been [trained in less than 20 minutes](https://arxiv.org/abs/1709.05011).
 - Dataset size are increasing each year.
 
@@ -40,7 +40,7 @@ However it also notes that new models and hyperparameters configuration are
 often depend on *epiphany* and *serendipity*.
 
 In order to harness the power of *big data* (more data, more computation power,
-etc.) models should not be designed to reduce error rate of a few epsilon on
+etc.) models should not be designed to reduce error rate of an epsilon on
 Imagenet but be designed to be better with more data.
 
 Baidu Research introduce a **power-law expononent**, that measure the *steepness*
@@ -106,7 +106,7 @@ curve steepness may be improved.
  (on which the model cannot be improved) and the dataset defects that may impair
  generalization.
 
-The authors also underline several major implications of the power law:
+The authors also underline major implications of the power law:
 
 Given the power law, researchers can train their new architecture on a small dataset,
 and have a good estimation of how it would scale on a bigger dataset.

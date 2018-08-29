@@ -17,12 +17,12 @@ image = ""
 caption = ""
 +++
 
-Many CNN architectures have been developed to attain the best accuracy on
+Most CNN architectures have been developed to attain the best accuracy on
 ImageNet. Computing power is not limited for this competition, why bother?
 
 However you may want to run your model on an old laptop, maybe without GPU, or
 even on your mobile phone. Let’s see three CNN architectures that are efficient
-while sacrificing few accuracy performance.
+while sacrificing little accuracy performance.
 
 ### 1. MobileNet
 
@@ -107,7 +107,7 @@ of the group convolution. The trick to produce this randomness can be seen
 
 Arxiv link: [(Freeman et al, 2018)](https://arxiv.org/abs/1801.06434)
 
-EffNet uses **spatial separable convolutions**. It is very similar to
+EffNet uses **spatial separable convolutions**. It is similar to
 MobileNet's depthwise separable convolutions.
 
 ![effnet](/figures/effnet.png)

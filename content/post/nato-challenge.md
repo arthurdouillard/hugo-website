@@ -24,8 +24,8 @@ you fully understand the situation at hand?**
 
 ![nato](/figures/nato.png)
 
-A few weeks ago, NATO organized an innovation challenge that posed this very
-scenario and these very questions. We decided to take on the challenge with
+A few weeks ago, NATO organized an innovation challenge that posed these
+questions. We decided to take on the challenge with
 the goal of finding innovative solutions in the areas of data filtering/fusing,
 visualization, and predictive analytics.
 
@@ -82,7 +82,7 @@ two-stage.
 **Two-stage architectures** first categorize potential objects in two classes:
 foreground or background. Then all foreground’s potential objects are classified
 in more fine-grained classes: cats, dogs, cars, etc. This two-stage method is
-very slow but also, and of course, produces the best accuracy. The most famous
+slow but also, and of course, produces the best accuracy. The most famous
 two-stage architecture is [Faster-RCNN](/post/faster-rcnn) [(Ren et al, 2015)](https://arxiv.org/abs/1506.01497).
 
 On the other hand, **single-stage architectures** don’t have this pre-selection
@@ -90,12 +90,12 @@ step of potential foreground objects. They are usually less accurate, but
 they are also faster. RetinaNet’s single-stage architecture is an exception:
 it reaches two-stage performance while having single-stage speed!
 
-On the figure 2 below, you can see a comparison of various object detection
+On the figure 2 below, you can see a comparison of object detection
 architectures.
 
 {{< figure src="/figures/cmp_obj_detect.png" caption="*Figure 2: Performance of object detection algorithms*" >}}
 
-RetinaNet is made of several components. We’ll try to describe how the data is
+RetinaNet is made of four components. We’ll try to describe how the data is
 transformed through every step.
 
 {{< figure src="/figures/retinanet.png" caption="*Figure 3: The RetinaNet architecture*" >}}
@@ -104,7 +104,7 @@ transformed through every step.
 
 First of all there is a **ResNet-50** [(He et al., 2015)](https://arxiv.org/abs/1512.03385).
 As every convolutional neural network (CNN),
-it takes an image as input and processes it through several convolution kernels.
+it takes an image as input and processes it through convolution kernels.
 Each kernel’s output is a feature map — the first feature maps capture high-level
 features (such as a line or a color). The further we go down in the network,
 the smaller the feature maps become because of the pooling layers. While they
@@ -145,7 +145,7 @@ the dimension of the bigger levels.
 
 #### 2.3. Anchors
 
-At each FPN level, several **anchors** are moved around the FPN’s feature maps.
+At each FPN level, **anchors** are moved around the FPN’s feature maps.
 An anchor is a rectangle with different sizes and ratios, like this:
 
 {{< figure src="/figures/anchors.svg" caption="*Figure 5: A sample of anchors of different sizes and ratios*" >}}
@@ -238,7 +238,7 @@ classification.
 In Figure 9, we module the cross entropy loss $-\log(p_t)$ by a factor
 $(1 — p_t)^\gamma$. Here, $\gamma$ is a modulating factor oscillating between
 0 and 5. The well-classified examples have a high $p_t$ , and thus a low factor.
-Therefore, the loss for well-classified examples is very low and forces the
+Therefore, the loss for well-classified examples is low and forces the
 model learn on harder examples. You can see in Figure 10 how much the loss is
 affected.
 

@@ -35,7 +35,7 @@ The authors divide the domain of object recognition in three categories:
 
 An **Exhaustive Search** tries to find bounding boxes for every objects in an
 image. Searching at every position and scale is unpracticable. Some use instead
-a few windows of different ratio and make them *slide* around the image. More
+a windows of different ratio and make them *slide* around the image. More
 sophisticated methods also exists ([1](https://cs.brown.edu/~pff/papers/lsvm-pami.pdf),
 [2](https://pdfs.semanticscholar.org/5be0/610861ffd6782adaa70cc16fcc0610ad1c86.pdf)).
 
@@ -49,7 +49,7 @@ To improve the algorithm's robustness (to scale, lightning, textures...) a
 variety of strategies are used during the bottom-up boxes' merging.
 
 Selective Search produces boxes that are good proposals for objects, it handles
-well various images condition, but more important it is fast enough to be used
+well different image conditions, but more important it is fast enough to be used
 in a prediction pipeline (like Fast-RCNN) to do real-time object detection.
 
 # The Algorithm
@@ -64,8 +64,8 @@ algorithm is kept.
 
 ![Bottom-up merging](/figures/selective_search_merging.svg)
 
-By keeping all existing boxes, the search can capture all scales which is very
-important in very hierarchical image: *Imagine a pilot in a plane: the pilot's
+By keeping all existing boxes, the search can capture all scales which is
+important in hierarchical image: *Imagine a pilot in a plane: the pilot's
 box in comprised in the bigger plane's box.*
 
 Plenty of boxes are created, the last box is the entire image! However some may
@@ -85,7 +85,7 @@ The authors use three strategies to improve the search's robustness:
 ## 1. Different color spaces
 
 In order to handle different lightning, the authors apply their algorithm to
-the same image transposed in several color spaces.
+the same image transposed in different color spaces.
 
 The most known color space is RGB, where a pixel has values of red, blue, and
 green. Among the other used color spaces there are:
@@ -109,11 +109,11 @@ search.*
 
 ## 3. Different Similarity Measures
 
-The most interesting part of this algorithm is the various metrics used to assess
+The most interesting part of this algorithm is the different metrics used to assess
 similarity between boxes.
 
 Four similarity measures are defined: Color, texture, size, fitness. These metrics
-are based on features computed with the pixels' values. It would be very slow
+are based on features computed with the pixels' values. It would be slow
 to re-compute these features each time boxes are merged. The authors designed
 these features so that they could be merged and *propagated* to the new box
 without re-computing everything.
@@ -184,6 +184,6 @@ to train on particularly difficult boxes**.
 ![Selective search in action](/figures/selective_search2.png)
 
 
-However SVMs are quite slow to train with huge amount of data. I will publish
-another article on Fast-RCNN, a model that use Convolutional Neural Networks on top
-of the Selective Search to do object recognition.
+However SVMs are slow to train with large amount of data. I will publish
+another [article](/posts/faster-rcnn) on Fast-RCNN, a model that use
+Convolutional Neural Networks on top of the Selective Search to do object recognition.

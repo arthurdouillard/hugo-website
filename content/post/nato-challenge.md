@@ -429,7 +429,7 @@ def compute_metrics(true_pos, false_pos, false_neg):
     recall = true_pos / (true_pos + false_neg)
 
     if precision == 0 or recall == 0:
-        return precision, recall, f1
+        return precision, recall, 0
 
     f1 = 2 / (1 / precision + 1 / recall)
     return precision, recall, f1

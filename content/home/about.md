@@ -9,6 +9,11 @@ weight = 1
 
 # List your experience.
 [[experience.experiences]]
+  role = "Research Engineer"
+  company = "Heuritech"
+  url = "https://www.heuritech.com"
+
+[[experience.experiences]]
   role = "Research Engineer intern"
   company = "Dataiku"
   url = "https://www.dataiku.com"

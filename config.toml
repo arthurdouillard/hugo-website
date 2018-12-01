@@ -33,6 +33,9 @@ defaultContentLanguage = "en"
 hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
 defaultContentLanguageInSubdir = false
 
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
 # Get last modified date for content from Git?
 enableGitInfo = false
 
@@ -157,7 +160,7 @@ enableGitInfo = false
   #
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
-  highlight = true
+  highlight = false
   highlight_languages = ["python"]
   # highlight_style = "github"
 

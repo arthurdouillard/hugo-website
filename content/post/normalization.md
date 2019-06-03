@@ -197,7 +197,7 @@ by simply computing the statistics on the incoming input.
 
 [(Ulyanov et al, 2016)](https://arxiv.org/abs/1607.08022)'s instance norm (IN)
 normalizes each channel of each batch's image independently. **The goal is to
-normalize the contract of the content image**. According to the authors, only the
+normalize the constrast of the content image**. According to the authors, only the
 style image contrast should matter.
 
 ### 2.3. Group Normalization

@@ -8,6 +8,14 @@ title = "Talks"
 weight = 2
 
 [[talks.talks]]
+  title = "Incremental Learning"
+  place = "Sorbonne / Heuritech"
+  date = "June 2019"
+  links = [
+    { link = "incremental_learning.pdf", link_label = "PDF", ext = false },
+  ]
+
+[[talks.talks]]
   title = "Lowshots learning"
   place = "Dataiku"
   date = "August 2018"
@@ -18,11 +26,12 @@ weight = 2
 
 
 [[talks.talks]]
-  title = "NATO Innovation Challenge pitch"
+  title = "NATO Innovation Challenge"
   place = "École Militaire"
   date = "May 2018"
   links = [
     { link = "https://innovationhub-act.org/news/innovation-challenge-winners", link_label = "URL", ext  = true },
+    { link = "https://arthurdouillard.com/post/nato-challenge/", link_label = "Blog Post", ext  = true },
   ]
 
 

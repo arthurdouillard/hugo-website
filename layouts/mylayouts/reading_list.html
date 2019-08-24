@@ -1,0 +1,42 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<section class="home-section">
+    <div class="container">
+        A list of books I read. I strongly recommend all books with a star.
+
+
+        {{ with .Params.reading }}
+        {{ range .reading }}
+        <div class="row pub-list-item">
+            <h3>{{(len .books)}} books read in {{ .year }}.</h3>
+
+            <ul style="list-style: none;">
+                {{ range .books }}
+                <li class="{{ index (.) 3}}">
+                    {{ if eq (index (.) 3) "good" }}
+                    <i class="fa fa-star pub-icon" aria-hidden="true"></i>
+                    {{ else }}
+                    <i class="fa fa-book pub-icon" aria-hidden="true"></i>
+                    {{ end }}
+                    <span itemprop="name">
+                        {{ index (.) 0 }}
+                    </span>
+
+                    <span class="talk-metadata">
+                        | {{ index (.) 2 }}&nbsp; &middot; &nbsp;{{ index (.) 1 }}
+                    </span>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+
+        {{ end }}
+        {{ end }}
+
+    </div>
+</section>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

@@ -27,9 +27,9 @@ weight = 1
   url = "https://www.lip6.fr/?LANG=en"
 
 [[education.courses]]
-  course = "Engineer in Computer Science & Machine Learning"
+  course = "Engineer in Computer Science"
   institution = "EPITA"
-  year = 2018
+  year = ""
   url = "http://www.epita.fr"
 
 +++

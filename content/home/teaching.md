@@ -14,6 +14,18 @@ subtitle = ""
 weight = 60
 
 [[teaching.teaching]]
+  title = "Deep Learning"
+  place = "EPITA"
+  date = "Starting Fall 2019"
+  role = "Lecturer"
+
+[[teaching.teaching]]
+  title = "Deep Learning for Computer Vision"
+  place = "Sorbonne University"
+  date = "Starting Fall 2019"
+  role = "Teacher Assistant"
+
+[[teaching.teaching]]
   title = "Deep Learning for Computer Vision"
   place = "EPITA"
   date = "Fall 2018"
@@ -44,10 +56,15 @@ weight = 60
   role = "Teacher Assistant"
 
 [[teaching.teaching]]
-  title = "SQL (Postgres) Programming"
+  title = "Web Programming & Project Management"
   place = "EPITA"
   date = "Spring 2017"
   role = "Teacher Assistant"
 
+[[teaching.teaching]]
+  title = "C++ Programming"
+  place = "EPITA"
+  date = "Spring 2017"
+  role = "Teacher Assistant"
 +++
 

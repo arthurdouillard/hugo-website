@@ -305,6 +305,11 @@ enableGitInfo = false
   url = "#teaching"
   weight = 5
 
+[[menu.main]]
+  name = "Reading"
+  url = "reading"
+  weight = 5
+
 #[[menu.main]]
 #  name = "Contact"
 #  url = "#contact"
@@ -322,7 +327,7 @@ enableGitInfo = false
   # Search provider:
   #   0: No search engine
   #   1: Algolia (https://www.algolia.com)
-  engine = 1
+  engine = 0
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.

@@ -1,0 +1,39 @@
+{{ $page := .page }}
+
+<!-- Custom widget -->
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Params.teaching }}
+    {{ range .teaching }}
+
+    <div class="pub-list-item" itemscope itemprop="Teaching" itemtype="http://schema.org/Event">
+      <i class="fa fa-university pub-icon" aria-hidden="true"></i>
+      <span itemprop="name">{{ .title }}</span>
+
+      {{ range .links }}
+
+      {{ if .link }}
+      &nbsp;
+        {{ if .ext }}
+          <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ .link }}">{{ .link_label }}</a>
+        {{ else }}
+          <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ $.Site.baseurl }}/files/talks/{{ .link }}">{{ .link_label }}</a>
+        {{ end }}
+      {{ end }}
+
+      {{ end }}
+
+      <div class="talk-metadata">
+        {{ .date }}&nbsp; &middot; &nbsp; {{ .place }}&nbsp; &middot; &nbsp; {{ .role }}
+      </div>
+    </div>
+
+    {{ end }}
+    {{ end }}
+  </div>
+</div>

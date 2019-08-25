@@ -14,6 +14,7 @@ layout = "reading_list"
         ["Step by Step (Å gå. Ett skritt av gangen)", "Lifestyle", "Erling Kagge", "basic"],
         ["Why We Sleep", "Non-Fiction", "Matthew Walker", "good"],
         ["The Gene: an intimate history", "Non-Fiction", "Siddhartha Mukherjee", "basic"],
+        ["Zen and the Art of Motorcycle Maintenance", "Philosophy", "Robert M. Pirsig", "star"],
         ["Never Split the Difference", "Business", "Christopher Voss & Tahl Raz", "basic"],
         ["A Brief History of Time", "Non-Fiction", "Stephen Hawking", "basic"],
         ["Factfulness", "Non-Fiction", "Hans Rosling", "basic"],

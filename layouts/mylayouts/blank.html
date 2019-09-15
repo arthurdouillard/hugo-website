@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+{{ partial "header_image.html" . }}
+
+<section class="home-section">
+    <div class="container">
+        {{ .Content }}
+    </div>
+</section>
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

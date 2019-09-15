@@ -19,11 +19,17 @@
 
       {{ if .link }}
       &nbsp;
-        {{ if .ext }}
-          <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ .link }}">{{ .link_label }}</a>
-        {{ else }}
-          <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ $.Site.baseurl }}/files/talks/{{ .link }}">{{ .link_label }}</a>
-        {{ end }}
+      {{ if .ext }}
+      <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ .link }}">{{ .link_label }}</a>
+      {{ else }}
+      {{ if .page }}
+      <a class="btn btn-primary btn-outline" style="font-size: 10px;"
+        href="{{ $.Site.baseurl }}/{{ .link }}">{{ .link_label }}</a>
+      {{ else }}
+      <a class="btn btn-primary btn-outline" style="font-size: 10px;"
+        href="{{ $.Site.baseurl }}/files/talks/{{ .link }}">{{ .link_label }}</a>
+      {{ end }}
+      {{ end }}
       {{ end }}
 
       {{ end }}

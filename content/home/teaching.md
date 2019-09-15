@@ -20,10 +20,11 @@ weight = 60
   role = "Lecturer"
 
 [[teaching.teaching]]
-  title = "Deep Learning for Computer Vision"
-  place = "Sorbonne University"
+  title = "Deep Learning for Computer Vision RDFIA"
+  place = "Sorbonne University master DAC / IMA"
   date = "Starting Fall 2019"
   role = "Teacher Assistant"
+  links = [{ link = "rdfia", link_label = "URL", ext = false, page = true}]
 
 [[teaching.teaching]]
   title = "Deep Learning for Computer Vision"

@@ -24,6 +24,8 @@ layout = "reading_list"
         ["Zadig ou la destinée", "Fiction", "Voltaire", "basic"],
         ["Bejing Coma", "Fiction", "Ma Jian", "good"],
         ["History of Iran", "History", "Several", "basic"],
+        ["Superbosses: How Exceptional Leaders Master the Flow of Talent", "Business", "Sydney Finkelstein", "basic"],
+        ["Embassytown", "Sci-Fi", "China Miéville", "good"]
     ]
 
 [[reading.reading]]

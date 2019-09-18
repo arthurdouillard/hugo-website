@@ -12,6 +12,13 @@ layout = "blank"
 
 RDFIA / Master DAC & IMA / Sorbonne
 
+Le cours est organisé par le professeur Matthieu Cord. Vos assistants de TPs auquel
+vous devrez envoyer vos travaux sont Yifu Chen (yifu.chen@lip6.fr) et moi-même Arthur
+Douillard (arthur.douillard@lip6.fr).
+
+Pour simplifier notre tâche vous êtes prier de nous adresser les mails avec pour objet
+`[RDFIA][TP-<numero>]`.
+
 ## Rappels
 
 Les TPs seront en Python3 et plusieurs bibliothèques seront utilisées. Voici
@@ -28,6 +35,6 @@ Les pdfs seront ajoutés au fur et à mesure.
 *18 & 25 Septembre 2019*
 
 - Énoncé: [TP1-2.pdf](/files/rdfia_resources/tp1-2.pdf)
-- Code et data: [TP1-2.zip](/files/rdfia_resources/tp1-2.zip)
+- Code et data: [TP1-2.zip](https://webia.lip6.fr/~douillard/rdfia/tp1-2.zip)
 
 

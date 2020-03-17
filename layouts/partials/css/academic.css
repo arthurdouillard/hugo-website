@@ -731,7 +731,7 @@ article .article-metadata {
 .article-style figure img {
   margin-top: 0;
   margin-bottom: 0;
-  border: 5px solid rgb(68, 71, 90);
+ /* border: 5px solid rgb(68, 71, 90);*/
 }
 
 .article-widget {

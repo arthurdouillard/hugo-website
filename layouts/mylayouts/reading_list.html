@@ -2,6 +2,7 @@
 {{ partial "navbar.html" . }}
 
 {{ partial "header_image.html" . }}
+{{ $baseUrl := "https://arthurdouillard.com" }}
 
 <section class="home-section">
     <div class="container">
@@ -15,19 +16,27 @@
 
             <ul style="list-style: none;">
                 {{ range .books }}
-                <li class="{{ index (.) 3}}">
-                    {{ if eq (index (.) 3) "good" }}
+                <li class="{{ .quality }}">
+                    {{ if eq .quality "good" }}
                     <i class="fa fa-star pub-icon" aria-hidden="true"></i>
                     {{ else }}
                     <i class="fa fa-book pub-icon" aria-hidden="true"></i>
                     {{ end }}
                     <span itemprop="name">
-                        {{ index (.) 0 }}
+                        {{ .name }}
+                    </span>
+                    <span class="talk-metadata">
+                        | {{ .author }}&nbsp; &middot; &nbsp;{{ .genre }}
                     </span>
 
-                    <span class="talk-metadata">
-                        | {{ index (.) 2 }}&nbsp; &middot; &nbsp;{{ index (.) 1 }}
-                    </span>
+                    {{ if .review }}
+                    &nbsp;
+                    <a class="btn btn-primary btn-outline" style="font-size: 10px;"
+                        href="{{ $baseUrl }}/books/{{ .review }}">Review</a>
+                    {{ end }}
+                    {{ if .anki }}
+                    <a class="btn btn-primary btn-outline" style="font-size: 10px;" href="{{ .anki }}">Anki</a>
+                    {{ end }}
                 </li>
                 {{ end }}
             </ul>

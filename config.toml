@@ -59,7 +59,7 @@ enableGitInfo = false
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "dark"
+  color_theme = "minimalist"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -165,7 +165,7 @@ enableGitInfo = false
   # highlight_style = "github"
 
   # Enable native social sharing buttons?
-  sharing = true
+  sharing = false
 
   # Privacy pack
   #   Show a cookie consent message to visitors
@@ -306,8 +306,8 @@ enableGitInfo = false
   weight = 5
 
 [[menu.main]]
-  name = "Reading"
-  url = "reading"
+  name = "Books"
+  url = "books"
   weight = 5
 
 #[[menu.main]]

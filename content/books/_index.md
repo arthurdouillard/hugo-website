@@ -15,6 +15,9 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2020
     books = [
+        {name = "The Player of Games", author = "Iain M Banks", genre = "Sci-Fi", quality = "basic"},
+        {name = "Where Good Ideas Come From", author = "Steven Johnson", quality = "basic", genre = "Self-Improvement"},
+        {name = "Death's End", author = "Cixin Liu", quality = "basic", review = "three-body", genre = "Sci-Fi"},
         {name = "A very short introduction: Food", author = "John Krebs", genre = "Technical", quality = "basic", review = "very-short-intro-food", anki = "https://ankiweb.net/shared/info/301205314"},
         {name = "Ball Lightning", genre = "Sci-Fi", author = "Cixin Liu", quality = "basic", review = "ball-lightning"},
     ]

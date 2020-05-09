@@ -78,7 +78,7 @@ ul, ol, dl {
 }
 
 /* Navigation bar text */
-.navbar-default {
+.navbar-light {
   font-family: '{{ .Get "nav_font" }}', sans-serif;
   font-weight: 400;
   line-height: 1.25;
@@ -1180,17 +1180,17 @@ a.label:hover {
   min-height: 70px !important;
 }
 
-.navbar-default {
+.navbar-light {
   background: {{ .Get "menu_primary" }};
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
-.navbar-default .navbar-toggle {
+.navbar-light .navbar-toggle {
   border-color: transparent;
 }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-light .navbar-toggle:focus,
+.navbar-light .navbar-toggle:hover {
   background-color: transparent;
 }
 
@@ -1198,9 +1198,9 @@ nav#navbar-main li {
   font-size: {{ .Get "font_size_small" }}px;
 }
 
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>a:focus,
-.navbar-default .navbar-nav>a:hover {
+.navbar-light .navbar-nav>li>a,
+.navbar-light .navbar-nav>a:focus,
+.navbar-light .navbar-nav>a:hover {
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -1208,19 +1208,19 @@ nav#navbar-main li {
   font-weight: 600;
 }
 
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-light .navbar-nav>li>a:focus {
   color: {{ .Get "menu_text" }};
   background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-light .navbar-nav>li>a:hover {
   color: {{ .Get "menu_text_active" }};
   background-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-light .navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:focus,
+.navbar-light .navbar-nav>.active>a:hover {
   color: {{ .Get "menu_text_active" }};
   font-weight: 700;
   background-color: transparent !important; /* Override Bootstrap. */
@@ -1238,7 +1238,7 @@ nav#navbar-main li {
   max-height: 50px;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-light .navbar-toggle .icon-bar {
   background-color: {{ .Get "menu_text" }} !important;
 }
 
@@ -1272,23 +1272,23 @@ nav#navbar-main li {
   outline: 0;
 }
 
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:visited {
+.navbar-light .navbar-nav>.open>a,
+.navbar-light .navbar-nav>.open>a:focus,
+.navbar-light .navbar-nav>.open>a:hover,
+.navbar-light .navbar-nav>.open>a:visited {
   color: {{ .Get "menu_text" }} !important;
   background-color: {{ .Get "menu_primary" }} !important;
 }
 
-.navbar-default .navbar-brand {
+.navbar-light .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
   color: {{ .Get "menu_title" }};
 }
 
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:hover {
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
   color: {{ .Get "menu_title" }};
   background-color: transparent;
 }
@@ -1358,7 +1358,7 @@ nav#navbar-main li {
     white-space: nowrap;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu {
+  .navbar-light .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -1368,21 +1368,21 @@ nav#navbar-main li {
     box-shadow: none;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-light .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
     line-height: 20px;
     color: {{ .Get "menu_text" }};
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  .navbar-light .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-light .navbar-nav .open .dropdown-menu > li > a:hover {
     color: inherit;
     background-color: transparent;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+  .navbar-light .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-light .navbar-nav .open .dropdown-menu > .active > a:focus,
+  .navbar-light .navbar-nav .open .dropdown-menu > .active > a:hover {
     color: {{ .Get "menu_text_active" }};
     background-color: transparent;
   }
@@ -1612,7 +1612,7 @@ body.dark {
   color: #fff;
 }
 
-.dark .navbar-default {
+.dark .navbar-light {
   box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 255, 255, .11);
   border-color: #070707;
 }

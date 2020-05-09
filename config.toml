@@ -40,14 +40,9 @@ pygmentsStyle = "monokai"
 enableGitInfo = false
 
 [outputs]
-  home = [ "HTML", "CSS", "RSS", "search" ]
+  home = [ "HTML", "CSS", "RSS", "JSON"]
   section = [ "HTML", "RSS" ]
 
-[outputFormats.search]
-  baseName = "search"
-  isPlainText = true
-  mediaType = "application/json"
-  notAlternative = true
 
 # Configure BlackFriday Markdown rendering.
 #   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
@@ -57,13 +52,7 @@ enableGitInfo = false
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
-  # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "minimalist"
-
-  # Font style.
-  #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
+  # AUTHOR SETUP
 
   # Your details.
   name = "Arthur Douillard"
@@ -89,10 +78,6 @@ enableGitInfo = false
   #   Uncomment line below to use.
   #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
 
-  # Diplay a logo in navigation bar rather than title (optional).
-  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-  logo = ""
-
   # Enable/disable map in Contact widget.
   # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
   # a map provider below.
@@ -113,6 +98,32 @@ enableGitInfo = false
   latitude = "37.4275"
   longitude = "-122.1697"
   zoom = 15
+
+
+  # SITE SETUP
+
+  # Color theme.
+  #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
+  color_theme = "minimalist"
+
+  # Font style.
+  #   Choose from `default`, `classic`, or `playfair`.
+  font = "default"
+
+  # Description for social sharing and search engines. If undefined, author role is used in place.
+  description = ""
+
+  # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
+  sharing_image = ""
+
+  # Twitter username (without @). Used when a vistor shares your site on Twitter.
+  twitter = "Ar_Douilllard"
+
+  # Diplay a logo in navigation bar rather than title (optional).
+  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
+  logo = ""
+
+
 
   # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -142,9 +153,7 @@ enableGitInfo = false
   #
   #   highlight_languages
   #     Add support for highlighting additional languages. Support for
-  #     languages mentioned here will be included in all pages. You
-  #     can also set this variable for a particular page in that
-  #     page's preamble.
+  #     languages mentioned here will be included in all pages.
   #
   #     Example: highlight_languages = ["go", "lisp", "ocaml"]
   #
@@ -159,7 +168,7 @@ enableGitInfo = false
   #   https://cdnjs.com/libraries/highlight.js/
   #
   #   For more info on the highlighting options, see:
-  #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
+  #   https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
   highlight = false
   highlight_languages = ["python"]
   # highlight_style = "github"
@@ -215,7 +224,14 @@ enableGitInfo = false
     #   1 = Detailed
     #   2 = APA
     #   3 = MLA
-    publication_format = 3
+    #   4 = Stream
+    publication_format = 4
+
+    # Talk list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = Stream
+    talk_format = 2
 
   # Social/Academic Networking
   #
@@ -224,7 +240,7 @@ enableGitInfo = false
   #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
   #   youtube, instagram, soundcloud
   #
-  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   For email icon, use "fas" icon pack, "envelope" icon, and
   #   "mailto:your@email.com" as the link.
   #
   #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
@@ -242,7 +258,7 @@ enableGitInfo = false
 
   [[params.social]]
     icon = "twitter"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//twitter.com/Ar_Douillard"
 
   #[[params.social]]
@@ -252,12 +268,12 @@ enableGitInfo = false
 
   [[params.social]]
     icon = "github"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//github.com/arthurdouillard"
 
   [[params.social]]
     icon = "linkedin"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//linkedin.com/in/arthurdouillard"
 
   # Link to a PDF of your resume/CV from the About widget.
@@ -295,10 +311,10 @@ enableGitInfo = false
   url = "#talks_list"
   weight = 3
 
-#[[menu.main]]
-#  name = "Projects"
-#  url = "#projects"
-#  weight = 4
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
 
 [[menu.main]]
   name = "Teaching"
@@ -308,7 +324,7 @@ enableGitInfo = false
 [[menu.main]]
   name = "Books"
   url = "books"
-  weight = 5
+  weight = 6
 
 #[[menu.main]]
 #  name = "Contact"
@@ -326,15 +342,17 @@ enableGitInfo = false
 [params.search]
   # Search provider:
   #   0: No search engine
-  #   1: Algolia (https://www.algolia.com)
-  engine = 0
+  #   1: Built-in (Fuse)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
   [params.search.algolia]
-    app_id = "NX60KRWN2S"
-    api_key = "3693810b60d96ef8fdd9bc31f09873e6"
-    index_name = "Posts"
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false
 
 # Taxonomies.
 [taxonomies]
@@ -344,7 +362,8 @@ enableGitInfo = false
 
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.
+#   Refer to https://sourcethemes.com/academic/docs/language/
 
 # Configure the English version of the website.
-[Languages.en]
+[languages.en]
   languageCode = "en-us"

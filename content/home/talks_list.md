@@ -5,7 +5,7 @@ date = 2016-04-20T00:00:00
 title = "Talks"
 
 # Order that this section will appear in.
-weight = 2
+weight = 4
 
 [[talks.talks]]
   title = "Incremental Learning"

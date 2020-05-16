@@ -15,6 +15,7 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2020
     books = [
+        {name = "PhD Grind", author = "Philip J. Guo", genre = "Biography", quality = "good", review = "phd-grind"},
         {name = "The Player of Games", author = "Iain M Banks", genre = "Sci-Fi", quality = "basic"},
         {name = "Where Good Ideas Come From", author = "Steven Johnson", quality = "basic", genre = "Self-Improvement"},
         {name = "Death's End", author = "Cixin Liu", quality = "basic", review = "three-body", genre = "Sci-Fi"},

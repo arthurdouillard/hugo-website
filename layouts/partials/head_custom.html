@@ -11,11 +11,11 @@
 {{ end }}
 
 {{ with .Params.Thumbnail }}
-<meta property="og:image" content={{ . | absURL }}/>
+<meta property="og:image" content={{ . | absURL }} />
 {{ end }}
 
 {{ with .Params.Summary }}
-<meta property="og:description" content="{{ . }}"/>
+<meta property="og:description" content="{{ . }}" />
 {{ end }}
 
 <link rel="icon" type="image/png" href="{{ "/img/favicon32.png" | relURL }}">

@@ -6,7 +6,7 @@ date = 2018-03-07
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Image segmentation with Graph Theory."
 

@@ -11,6 +11,8 @@ highlight = false
 #   3 = MLA
 list_format = 1
 
+pretty_date = "April 2020"
+
 abstract_short = "We apply a novel distillation loss over all ConvNet's intermediary features maps to reduce Catastrophic Forgetting in a large amount of small tasks."
 
 authors = ["Arthur Douillard", "Matthieu Cord", "Charles Ollion", "Thomas Robert", "Eduardo Valle"]
@@ -25,13 +27,13 @@ links = [
 ]
 
 url_pdf = "https://arxiv.org/abs/2004.13513"
-url_code =  false
+url_code =  "https://github.com/arthurdouillard/incremental_learning.pytorch"
 url_dataset = false
 url_poster = false
 url_project = false
-url_slides = false
+url_slides = "http://localhost:1313/files/talks/douillard2020podnet_continualai.pdf"
 url_source = false
-url_video = false
+url_video = "https://www.youtube.com/watch?v=9xm4P4Kss54"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

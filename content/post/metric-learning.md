@@ -6,7 +6,7 @@ date = 2019-01-13
 draft = true
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Deep Learning requires thousand of samples. By learning a metric this constraint is eased up to classify with a dozen samples."
 

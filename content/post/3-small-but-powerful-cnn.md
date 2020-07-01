@@ -7,6 +7,8 @@ draft = false
 
 authors = []
 
+hidden = false
+
 tags = []
 summary = "Overview of three CNN that have a low computational cost"
 

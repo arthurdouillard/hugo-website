@@ -8,11 +8,20 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
+  title = "Small Task Incremental Learning"
+  place = "ContinualAI"
+  date = "May 2020"
+  links = [
+    { link = "douillard2020podnet_continualai.pdf", link_label = "PDF", ext = false },
+    { link = "https://www.youtube.com/watch?v=9xm4P4Kss54", link_label = "Video", ext = true}
+  ]
+
+[[talks.talks]]
   title = "Incremental Learning"
   place = "Sorbonne / Heuritech"
   date = "June 2019"
   links = [
-    { link = "incremental_learning.pdf", link_label = "PDF", ext = false },
+    { link = "incremental_learning.pdf", link_label = "PDF", ext = false }
   ]
 
 [[talks.talks]]

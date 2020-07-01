@@ -6,7 +6,7 @@ date = 2018-05-07
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "All about the architecture DenseNet."
 

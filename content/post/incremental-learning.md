@@ -6,7 +6,7 @@ date = 2019-12-11
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "The hallmark of human intelligence is the capacity to learn continuously. Modern algorithms unfortunately lack this ability; the field of incremental learning is then trying to make our algorithms learn a continuous succession of tasks without forgetting."
 

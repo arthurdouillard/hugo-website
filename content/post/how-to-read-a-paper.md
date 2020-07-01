@@ -6,7 +6,7 @@ date = 2018-02-06
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Summary of a paper about... how to read a paper."
 

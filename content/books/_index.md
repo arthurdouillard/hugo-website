@@ -15,6 +15,7 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2020
     books = [
+        {name = "Mr Man and Son", author = "Lao She", genre = "Satirical Novel", quality = "basci", review = "mr-ma-and-son"},
         {name = "PhD Grind", author = "Philip J. Guo", genre = "Biography", quality = "good", review = "phd-grind"},
         {name = "The Player of Games", author = "Iain M Banks", genre = "Sci-Fi", quality = "basic"},
         {name = "Where Good Ideas Come From", author = "Steven Johnson", quality = "basic", genre = "Self-Improvement"},

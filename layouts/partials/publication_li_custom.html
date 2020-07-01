@@ -10,7 +10,8 @@
         {{ with .Params.authors }}
         {{- delimit . ", " | markdownify -}}
         {{- end -}} </div>
-      {{ .Params.publication_origin }}
+      {{ .Params.publication_origin }}<br>
+      {{ .Params.pretty_date }}
     </div>
 
     <div class="ml-3">
@@ -37,6 +38,6 @@
 
     <div class="talk-links">
       {{ partial "publication_links" (dict "content" . "is_list" 1) }}
-    </div>
+    </div><br />
   </div>
 </div>

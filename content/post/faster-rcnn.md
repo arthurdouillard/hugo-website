@@ -6,7 +6,7 @@ date = 2018-03-26
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Fast-RCNN is an Object Detection algorithm using Selective Search and CNN."
 

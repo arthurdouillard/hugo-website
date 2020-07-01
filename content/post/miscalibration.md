@@ -6,7 +6,7 @@ date = 2019-05-30
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Why deep neural networks confidence are flawed and how to fix it."
 

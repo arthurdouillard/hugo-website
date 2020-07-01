@@ -6,7 +6,7 @@ date = 2018-08-10
 draft = false
 
 authors = []
-
+hidden = false
 tags = []
 summary = "Overview of the different normalization methods that exist for neural networks."
 

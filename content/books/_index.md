@@ -15,9 +15,14 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2020
     books = [
-        {name = "Mr Man and Son", author = "Lao She", genre = "Satirical Novel", quality = "basci", review = "mr-ma-and-son"},
+        {name = "Homo Deus", author = "Yuval Noah Harari", genre = "History", quality = "basic"},
+        {name = "Une forme de guerre", author = "Iain M. Banks", genre = "Sci-Fi", quality = "basic"},
+        {name = "The Ride of a Lifetime", author = "Robert Iger", genre = "Business", quality = "good", review = "ride-of-a-lifetime"},
+        {name = "Assassin's Apprentice", author = "Robin Hobb", genre = "Fantasy", quality = "basic"},
+        {name = "Simple & Direct", author = "Jacques Barzun", genre = "Writing", quality = "basic"},
+        {name = "Mr Man and Son", author = "Lao She", genre = "Satirical Novel", quality = "basic", review = "mr-ma-and-son"},
         {name = "PhD Grind", author = "Philip J. Guo", genre = "Biography", quality = "good", review = "phd-grind"},
-        {name = "The Player of Games", author = "Iain M Banks", genre = "Sci-Fi", quality = "basic"},
+        {name = "The Player of Games", author = "Iain M. Banks", genre = "Sci-Fi", quality = "basic"},
         {name = "Where Good Ideas Come From", author = "Steven Johnson", quality = "basic", genre = "Self-Improvement"},
         {name = "Death's End", author = "Cixin Liu", quality = "basic", review = "three-body", genre = "Sci-Fi"},
         {name = "A very short introduction: Food", author = "John Krebs", genre = "Technical", quality = "basic", review = "very-short-intro-food", anki = "https://ankiweb.net/shared/info/301205314"},

@@ -8,6 +8,23 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
+  title = "Continual Learning"
+  place = "Extrality"
+  date = "November 2020"
+  links = [
+    { link = "2020-11_extrality.pdf", link_label = "PDF", ext = false }
+  ]
+
+[[talks.talks]]
+  title = "PODNet: Small Task Incremental Learning"
+  place = "ECCV"
+  date = "August 2020"
+  links = [
+    { link = "2020-08_podnet_eccv_long.pdf", link_label = "PDF", ext = false },
+    { link = "https://www.youtube.com/watch?v=SWFO1_lTcR8", link_label = "Video", ext = true}
+  ]
+
+[[talks.talks]]
   title = "Small Task Incremental Learning"
   place = "ContinualAI"
   date = "May 2020"

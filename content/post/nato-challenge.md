@@ -492,3 +492,5 @@ Thanks to [Hicham El Boukkouri](https://medium.com/@HichamEB?source=post_page) &
 of this blog post.
 
 Note that this post was at first published on [Dataiku's technical blog on Medium](https://medium.com/data-from-the-trenches/object-detection-with-deep-learning-on-aerial-imagery-2465078db8a9).
+
+**Update**: Our model has been improved recently by [Stuparu et al. 2020](https://www.mdpi.com/1424-8220/20/22/6485) and published in Sensors!

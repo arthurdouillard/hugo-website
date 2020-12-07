@@ -74,6 +74,22 @@ Cette fois-ci, les deux groupes auront TPs en même temps, par zoom.
 - Zoom 18 Novembre 16h: [zoom link](https://zoom.us/j/98138914049?pwd=ZTVkbWZsc21vS2tKeUF0cWFVeStOdz09), password **rdfia**
 - Zoom 25 Novembre 16h: [zoom link](https://zoom.us/j/91842902968?pwd=S3ZxQ1N0TFl6Y0syMyticGdlTHlodz09), password **rdfia**
 
+- Enregistrement du zoom du 25 Nov: [video](https://drive.google.com/drive/folders/1lBxnQ3Yh4_Q-P2A26F5Uv12ooa5BvP2r?usp=sharing)
+
+
+**Le rendu est déplacé au 11 Décembre, 23h59.**
+
+**Vu que certains ont mal compris, nous considerons pour le premier rendu (TP1-2) que les questions
+avec étoiles sont des bonus. Pour le rendu 2 (TP3-4-5-6) et les suivants, ces questions sont des questions
+avec plus de points, les questions bonus seront, comme précisé dès le départ, dénotés par le mot "bonus".**
+
+
+## TP 8: Transfer Learning
+
+*9 Décembre 2020*
+
+
+
 
 #### Mises à jour:
 
@@ -98,3 +114,5 @@ Cette fois-ci, les deux groupes auront TPs en même temps, par zoom.
 2020-11-03, 14:25: Ajout d'une cheatsheet gradient.
 
 2020-11-16, 12:42: Ajout du TP5-6 conv.
+
+2020-11-26, 10:28: Mise à jour de la date de rendu du second TP + précision sur les bonus.

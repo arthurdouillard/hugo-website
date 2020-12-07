@@ -1,5 +1,5 @@
 +++
-title = "Small-Task Incremental Learning"
+title = "PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning"
 date = 2020-01-01T00:00:00
 math = false
 highlight = false
@@ -31,7 +31,7 @@ url_code =  "https://github.com/arthurdouillard/incremental_learning.pytorch"
 url_dataset = false
 url_poster = false
 url_project = false
-url_slides = "http://localhost:1313/files/talks/douillard2020podnet_continualai.pdf"
+url_slides = "https://arthurdouillard.com/files/talks/douillard2020podnet_continualai.pdf"
 url_source = false
 url_video = "https://www.youtube.com/watch?v=9xm4P4Kss54"
 

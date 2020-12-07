@@ -15,6 +15,7 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2020
     books = [
+        {name = "Too Like the Lightning", author = "Ada Palmer", genre = "Sci-Fi", quality = "good"},
         {name = "Homo Deus", author = "Yuval Noah Harari", genre = "History", quality = "basic"},
         {name = "Une forme de guerre", author = "Iain M. Banks", genre = "Sci-Fi", quality = "basic"},
         {name = "The Ride of a Lifetime", author = "Robert Iger", genre = "Business", quality = "good", review = "ride-of-a-lifetime"},

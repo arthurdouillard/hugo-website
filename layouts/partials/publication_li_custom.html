@@ -1,4 +1,4 @@
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+<div class="media stream-item" itemscope itemtype="http://schema.org/Event" style="margin-bottom: -25px;">
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0" itemprop="name">
@@ -17,7 +17,7 @@
     <div class="ml-3">
       {{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
       {{ with $resource }}
-      {{ $image := .Resize "400x" }}
+      {{ $image := .Resize "200x" }}
       <img src="{{ $image.RelPermalink }}" itemprop="image">
       {{end}}
     </div>
@@ -36,7 +36,7 @@
     </div>
     {{ end }}
 
-    <div class="talk-links">
+    <div class="talk-links" style="margin-top: -20px">
       {{ partial "publication_links" (dict "content" . "is_list" 1) }}
     </div><br />
   </div>

@@ -13,7 +13,7 @@ list_format = 1
 
 pretty_date = ""
 
-abstract_short = "We apply a novel distillation loss over all ConvNet's intermediary features maps to reduce Catastrophic Forgetting in a large amount of small tasks."
+abstract_short = ""
 
 authors = ["Arthur Douillard", "Matthieu Cord", "Charles Ollion", "Thomas Robert", "Eduardo Valle"]
 publication_origin = "ECCV 2020"
@@ -23,7 +23,7 @@ project_page = false
 code = false
 
 links = [
-    {url_pdf = "https://arxiv.org/abs/2004.13513"}
+
 ]
 
 url_pdf = "https://arxiv.org/abs/2004.13513"

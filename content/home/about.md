@@ -36,6 +36,6 @@ weight = 1
 
 # About me
 
-I'm currently a PhD student at Sorbonne University under the supervision of
-Professor Matthieu Cord. My thesis is on incremental learning. I'm also working
-part-time as a Research Scientist at Heuritech, deploying convolution nets for fashion.
+I'm a coder, a scientist, and a teacher. Currently a PhD student at Sorbonne University Professor Matthieu Cord I research how to train Deep Neural Networks continually. I'm also working
+part-time as a Research Scientist at Heuritech, deploying convolution nets for fashion. And finally, I am
+a lecture in Parisian engineering school EPITA where I teach Computer Vision.

@@ -11,12 +11,12 @@ highlight = false
 #   3 = MLA
 list_format = 1
 
-pretty_date = "June 2020"
+pretty_date = ""
 
-abstract_short = "Instead of optimizing the past and current tasks, we train a model to be good on all tasks, future included. The incorporation of future tasks with ZeroShot allows us to gain insights useful to minimize interference with old and new classes."
+abstract_short = ""
 
 authors = ["Arthur Douillard",  "Eduardo Valle", "Charles Ollion", "Thomas Robert", "Matthieu Cord"]
-publication_origin = "arXiv Preprint"
+publication_origin = "CVPR CLVISION Workshop 2021"
 
 pdf = "https://arxiv.org/abs/2006.13748"
 project_page = false

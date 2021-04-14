@@ -13,6 +13,17 @@ type = "mylayouts"
 layout = "reading_list"
 
 [[reading.reading]]
+    year = 2021
+    books = [
+        {name = "The Royal Game", author = "Stefan Zweig", genre = "Fiction", quality = "good"},
+        {name = "The Kiter Runner", author = "Khaled Hosseini", genre = "Historical Fiction", quality = "basic", review = "the-kite-runner},
+        {name = "Chaos Monkeys", author = "Antonio García Martínez", genre = "Biography", quality = "basic"},
+        {name = "Freakonomics", author = "Stephen J. Dubner and Steven Levitt", genre = "Business", quality = "basic"},
+        {name = "L'anomalie", author = "Hervé le Tellier", genre = "Sci-Fi", quality = "basic"},
+        {name = "Enlightenment Now", author = "Steven Pinker", genre = "Non-Fiction", quality = "basic"},
+    ]
+
+[[reading.reading]]
     year = 2020
     books = [
         {name = "Too Like the Lightning", author = "Ada Palmer", genre = "Sci-Fi", quality = "good"},
@@ -50,7 +61,7 @@ layout = "reading_list"
         {name = "Never Split the Difference", genre = "Business", author = "Christopher Voss & Tahl Raz", quality = "basic"},
         {name = "Zen and the Art of Motorcycle Maintenance", genre = "Philosophy", author = "Robert M. Pirsig", quality = "star"},
         {name = "The Gene: an intimate history", genre = "Non-Fiction", author = "Siddhartha Mukherjee", quality = "basic"},
-        {name = "Why We Sleep", genre = "Non-Fiction", author = "Matthew Walker", quality = "good"},
+        {name = "Why We Sleep", genre = "Non-Fiction", author = "Matthew Walker", quality = "basic"},
         {name = "Step by Step (Å gå. Ett skritt av gangen)", genre = "Lifestyle", author = "Erling Kagge", quality = "basic"},
         {name = "Gagner la guerre", genre = "Adventure", author = "Jean-Philippe Jaworski", quality = "good"}
     ]

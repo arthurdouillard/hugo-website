@@ -8,6 +8,31 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
+  title = "Continuum: Simple Data Loaders"
+  place = "ContinualAI"
+  date = "April 2021"
+  links = [
+    { link = "2021-03_continuum_continualai.pdf", link_label = "PDF", ext = false },
+    { link = "https://www.youtube.com/watch?v=ntSR5oYKyhM", link_label = "Video", ext = true },
+  ]
+
+[[talks.talks]]
+  title = "Continual Segmentation"
+  place = "Sorbonne"
+  date = "February 2021"
+  links = [
+    { link = "2021-02_plop_sorbonne.pdf", link_label = "PDF", ext = false }
+  ]
+
+[[talks.talks]]
+  title = "Continual Learning"
+  place = "Dataiku"
+  date = "January 2021"
+  links = [
+    { link = "2021-01_dataiku.pdf", link_label = "PDF", ext = false }
+  ]
+
+[[talks.talks]]
   title = "Continual Learning"
   place = "Extrality"
   date = "November 2020"

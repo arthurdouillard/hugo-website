@@ -29,6 +29,8 @@ quelques liens pour rappel, ou pour vous familiariser en avance:
 
 Les cours seront ajoutés au fur et à mesure.
 
+Calendrier où les cours de RDFIA sont indiqués: [calendrier](https://sucal.aminedjeghri.tk/calendar/M2_IMA)
+
 ## TP 1 - 2 : SIFT / Bag of words
 *7 & 14 & 21 Octobre 2020*
 
@@ -84,11 +86,38 @@ avec étoiles sont des bonus. Pour le rendu 2 (TP3-4-5-6) et les suivants, ces q
 avec plus de points, les questions bonus seront, comme précisé dès le départ, dénotés par le mot "bonus".**
 
 
-## TP 8: Transfer Learning
+## TP 7: Transfer Learning
 
 *9 Décembre 2020*
 
+- Énoncé: [TP7.pdf](/files/rdfia_resources/tp7.pdf)
+- Colab: [colab](https://colab.research.google.com/drive/1_RnEZX1Fp1z6seRM2c3mpHHowvDeQ1ka?usp=sharing)
+- Zoom: [zoom link](https://zoom.us/j/93572572065?pwd=STlWM0JwLzZJUTE5aXNldEhUeFUyZz09), password **rdfia**
+- [Alex](https://alexrame.github.io/)'s slides: [slides.pdf](/files/rdfia_resources/alex_slides_tp7.pdf)
 
+## TP 8: Visualization
+
+*16 Décembre 2020*
+
+- Énoncé: [TP8.pdf](/files/rdfia_resources/tp8.pdf)
+- Colab: [colab](https://colab.research.google.com/drive/1ubvt5LuJ0SNqsw3rnHRbYHL3Ycp3f3rk?usp=sharing)
+- Zoom: [zoom link](https://zoom.us/j/96910655374?pwd=eWt2ZWoydXEvZHJwSEFEZHY1U3c1QT09), password **rdfia**
+
+## TP 9-10: GAN
+
+*6 & 13 Janvier 2021*
+
+- Énoncé: [TP9-10.pdf](/files/rdfia_resources/tp9-10.pdf)
+
+- Colab 1ère séance: [colab 1](https://colab.research.google.com/drive/1judQvIGv965KBdmVRgrkHzGQICVzyA5s?usp=sharing)
+- Zoom du 6 Janvier: [zoom link](https://zoom.us/j/98963023208?pwd=RC9tQ2hXY28zVG9LVXd2N053ZjljZz09), password **rdfia**
+- Enregistrement du 6 Janvier par Asya: [video.mp4](https://drive.google.com/file/d/1y_wTD5xAURFLthZX37vSqce9hypaqrdm/view?usp=sharing)
+- **FIX**: the link for the celeba and celeba64 datasets have been changed (the latter was broken). They are now
+http://webia.lip6.fr/~douillard/rdfia/celeba.zip and http://webia.lip6.fr/~douillard/rdfia/celeba64.zip
+
+- Colab 2ème séance: [colab 2](https://colab.research.google.com/drive/1t1N3-EtzWu6mY_-5Hr7Bb0jTgMTC-S4I?usp=sharing)
+- Zoom du 13 Janvier: [zoom link](https://zoom.us/j/91509429294?pwd=Y3VEV2xwUlZkdnVub01DV211NVpFdz09)
+- Enregistrement du 13 Janvier par Alex + slides: [Google Drive](https://drive.google.com/drive/folders/14RSgh5ik8qV5bhdAf53MMWzzi5mXiCAW?usp=sharing)
 
 
 #### Mises à jour:
@@ -116,3 +145,11 @@ avec plus de points, les questions bonus seront, comme précisé dès le départ
 2020-11-16, 12:42: Ajout du TP5-6 conv.
 
 2020-11-26, 10:28: Mise à jour de la date de rendu du second TP + précision sur les bonus.
+
+2020-12-08, 11:11: Ajout du TP 7 transfer.
+
+2020-12-15, 16:36: Ajout des TPs 8 - 9 - 10.
+
+2021-01-07, 13:46: Ajout du lien vers le cours du 6 Janvier, fix des urls pour celeba.
+
+2021-01-25, 20:50: Ajout du lien vers l'enregistrement et les slides du TP 10.

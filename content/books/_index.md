@@ -16,7 +16,7 @@ layout = "reading_list"
     year = 2021
     books = [
         {name = "The Royal Game", author = "Stefan Zweig", genre = "Fiction", quality = "good"},
-        {name = "The Kiter Runner", author = "Khaled Hosseini", genre = "Historical Fiction", quality = "basic", review = "the-kite-runner},
+        {name = "The Kiter Runner", author = "Khaled Hosseini", genre = "Historical Fiction", quality = "basic", review = "the-kite-runner"},
         {name = "Chaos Monkeys", author = "Antonio García Martínez", genre = "Biography", quality = "basic"},
         {name = "Freakonomics", author = "Stephen J. Dubner and Steven Levitt", genre = "Business", quality = "basic"},
         {name = "L'anomalie", author = "Hervé le Tellier", genre = "Sci-Fi", quality = "basic"},

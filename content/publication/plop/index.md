@@ -33,7 +33,7 @@ url_poster = false
 url_project = false
 url_slides = false
 url_source = false
-url_video = false
+url_video = "https://youtu.be/GmnglAsraAM?t=2562"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

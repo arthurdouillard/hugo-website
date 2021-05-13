@@ -8,6 +8,17 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
+  title = "Continual Learning outside full supervision"
+  place = "ContinualAI"
+  date = "April 2021"
+  links = [
+    { link = "2021-04_plop_continualai.pdf", link_label = "PDF", ext = false },
+    { link = "https://youtu.be/GmnglAsraAM?t=2562", link_label = "Video", ext = true },
+
+  ]
+
+
+[[talks.talks]]
   title = "Continuum: Simple Data Loaders"
   place = "ContinualAI"
   date = "April 2021"

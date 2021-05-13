@@ -15,7 +15,8 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2021
     books = [
-        {name = "The Royal Game", author = "Stefan Zweig", genre = "Fiction", quality = "good"},
+        {name = "Flowers for Algernon", author = "Daniel Keyes", genre = "Sci-Fi", quality = "good", review="algernon"},
+        {name = "The Royal Game", author = "Stefan Zweig", genre = "Fiction", quality = "good", review="the-royal-game"},
         {name = "The Kiter Runner", author = "Khaled Hosseini", genre = "Historical Fiction", quality = "basic", review = "the-kite-runner"},
         {name = "Chaos Monkeys", author = "Antonio García Martínez", genre = "Biography", quality = "basic"},
         {name = "Freakonomics", author = "Stephen J. Dubner and Steven Levitt", genre = "Business", quality = "basic"},

@@ -31,7 +31,7 @@ url_code =  "https://github.com/Continvvm/continuum"
 url_dataset = false
 url_poster = false
 url_project = false
-url_slides = "2021-03_continuum_continualai.pdf"
+url_slides = "https://arthurdouillard.com/files/talks/2021-03_continuum_continualai.pdf"
 url_source = false
 url_video = "https://www.youtube.com/watch?v=ntSR5oYKyhM"
 

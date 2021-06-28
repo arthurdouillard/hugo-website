@@ -48,4 +48,3 @@ The field of Continual Learning can be crudely split in three settings ([Lomonac
 ### Learning New Classes
 
 In the NC setting,
-

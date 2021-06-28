@@ -8,8 +8,17 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
-  title = "Continual Learning outside full supervision"
+  title = "Continual Semantic Segmentation and Object Rehearsal"
   place = "ContinualAI"
+  date = "June 2021"
+  links = [
+    { link = "2021-06_cv_talks.pdf", link_label = "PDF", ext = false }
+
+  ]
+
+[[talks.talks]]
+  title = "Continual Learning outside full supervision"
+  place = "Computer Vision Talks"
   date = "April 2021"
   links = [
     { link = "2021-04_plop_continualai.pdf", link_label = "PDF", ext = false },

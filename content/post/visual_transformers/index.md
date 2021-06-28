@@ -1,11 +1,11 @@
 +++
-title = "Visual Transformers"
+title = "Vision Transformers"
 blog = true
 
 date = 2021-05-20
 draft = false
 
-hidden = true
+hidden = false
 authors = []
 
 tags = []
@@ -33,7 +33,7 @@ the ResNet ([He et al.](https://arxiv.org/abs/1512.03385)) and its residual shor
 The main drawback of convolutions is their lack of global reach. A problem, relatively similar
 to the difficulty of Recurent Neural Networks (e.g. RNN, LSTM, GRU) to model long series of tokens.
 The NLP community saw its "imagenet" moment when the Transformer ([Vaswani et al.](https://arxiv.org/abs/1706.03762))
-architecture was unveiled. First designed with a somewhat complex encoder-decoder complex,
+architecture was unveiled. First designed with a somewhat complex encoder-decoder,
 it was later refined in a serie of identical blocks in the BERT ([Devlin et al.](https://arxiv.org/abs/1810.04805))
 model. Using transfer learning, most (all?) tasks of NLP were attacked via a BERT-like
 architecture.
@@ -45,7 +45,7 @@ Two questions:
 # What are Transformers?
 
 I can only recommend the excellent blog post of Jay Alammar "[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)"
-which explain very well this architecture. But here is a quick recap, a transformer is basically that:
+which explains very well this architecture. But here is a quick recap, a transformer is basically that:
 
 ![transformer diagram](transformer.png)
 
@@ -70,7 +70,7 @@ belong to any word of the sentence, but is actually a vector that is learned dur
 Once this class token has gone through the N blocks, it will be finally given to
 a classifier that will predict whatever you training for.
 
-Put it simply, this class token will goes through the network and will extract as
+Put it simply, this class token will go through the network and will extract as
 much as possible useful information from the *word* tokens, in order to produce
 a good representation for the classifier.
 
@@ -79,7 +79,7 @@ a good representation for the classifier.
 This is the main part of the transformer. First, let's concentrate on the 'self-attention'.
 
 We start with the matrix $X \in \mathbb{R}^{T \times d}$ containing all $T$ tokens. This matrix
-is going to be linearly transformed (aka matrix multiplcation, aka go to a fully-connected layer)
+is going to be linearly transformed (aka matrix multiplication, aka go to a fully-connected layer)
 three times in parallel:
 
 $$Q = X W_q$$
@@ -198,7 +198,7 @@ a kind of dropout, but where a whole transformer block is dropped with only the 
 The second contribution of DeiT is to propose to improve the training of the transformer
 by using a teacher model. The teacher/student strategy is often seen where a large trained
 teacher model produces novel targets to the student through knowledge distillation
-([Hinton et al.](https://arxiv.org/abs/1503.02531)). Basically, the student is train
+([Hinton et al.](https://arxiv.org/abs/1503.02531)). Basically, the student is trained
 to predict the labels of the image but also to mimick the probabilities of the teacher.
 
 The first interesting conclusion is that it's better to use a large CNN
@@ -246,7 +246,7 @@ With few data, the positional prior has an important role as the following graph
 
 ![convit efficiency per sample](convit_efficiency.png)
 
-## CaiT: Further Refinements of DeiT
+# CaiT: Further Refinements of DeiT
 
 The authors from DeiT later released CaiT ([Touvron et al.](https://arxiv.org/abs/2103.17239)),
 a refinement of of DeiT.
@@ -258,18 +258,19 @@ transformers, those parameters are either the MLP or the Multi-headed Self-Atten
 
 Previous works (ReZero [Bachlenchner et al.](https://arxiv.org/abs/2003.04887),
 SkipInit [De et al.](https://arxiv.org/abs/2002.10444), and FixUp [Zhang et al.](https://arxiv.org/abs/1901.09321))
-wondered if we could train a ResNet without batch normalization. They all found, with minor
+wondered if we could train a very deep ResNet without batch normalization. They all found, with minor
 variations, that it was possible if main branch of a ResNet block was weighted by
 a learned scalar $\in \mathbb{R}$. LayerScale proposes more or less the same, but
 with one scale per dimension $\in \mathbb{R}^D$, initialized to a small $\epsilon$ value:
 
 ![layer scale](layer_scale.png)
 
+
 The second contribution of CaiT, is very similar to a contribution of ConViT (authors
 are partially the same): CaiT also introduces the class token after several blocks.
 The last few blocks with class tokens implement a **Class Attention**.
 
-Contrary to **Self-Attention**, this Class Attention *freeze* the patch tokens:
+Contrary to **Self-Attention**, this Class Attention *freezes* the patch tokens:
 
 ![cait architecture](cait.png)
 
@@ -295,9 +296,9 @@ that with carefully designed regularizations, the training could be done on rela
 small scale datasets. This contribution, and the fantastic [Timm library](https://github.com/rwightman/pytorch-image-models),
 opened a gold rush on transformers.
 
-I won't enumerate all variants here. Some may be only a sligth tweak and will be forgotten,
+I won't enumerate all variants here. Some may be only a slight tweak and will be forgotten,
 others may prove to be a stepping stone in the transformers world. Only time will tell.
 
-But, that's assuming that transformers is indeed the right solution. Attention is all we need?
+But, that's assuming that transformer is indeed the right solution. **Attention is all we need?**
 Recent research on MLPs (yes, you read correctly) indicates that maybe attention is
 only a special case of a more general framework. I'll cover it in a later post!

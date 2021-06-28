@@ -284,5 +284,3 @@ step on all data. Current solutions are considerably worse than this.
 On a personal note, my team and I have submitted an article for a conference on this
 subject. If it's accepted, I'll make a blog article on it. Furthermore I have made
 a library to train incremental model: [inclearn](https://github.com/arthurdouillard/incremental_learning.pytorch).
-The library wasn't updated since a few months as I'm currently cleaning my code. Be sure
-to check it out later.

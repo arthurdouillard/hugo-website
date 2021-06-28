@@ -29,11 +29,11 @@ links = [
 url_pdf = "https://arxiv.org/abs/2006.13748"
 url_code =  "https://github.com/arthurdouillard/incremental_learning.pytorch"
 url_dataset = false
-url_poster = false
+url_poster = "https://arthurdouillard.com/files/posters/ghost.pdf"
 url_project = false
-url_slides = false
+url_slides = "https://arthurdouillard.com/files/talks/ghost.pdf"
 url_source = false
-url_video = false
+url_video = "https://youtu.be/m_ob07ZeAMU"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

@@ -29,11 +29,11 @@ links = [
 url_pdf = "https://arxiv.org/abs/2011.11390"
 url_code =  "https://github.com/arthurdouillard/CVPR2021_PLOP"
 url_dataset = false
-url_poster = false
+url_poster = "https://arthurdouillard.com/files/posters/plop.pdf"
 url_project = false
-url_slides = false
+url_slides = "https://arthurdouillard.com/files/talks/plop.pdf"
 url_source = false
-url_video = "https://youtu.be/GmnglAsraAM?t=2562"
+url_video = "https://youtu.be/UbO8U2Yj0Eg"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]

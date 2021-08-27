@@ -15,12 +15,16 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2021
     books = [
+        {name = "The Four Agreements: A Practical Guide to Personal Freedom", author = "Don Miguel Ruiz", genre = "Self-improvement", quality = "basic"},
+        {name = "Morales Provisoires", author = "Raphaël Enthoven", genre = "Philosophy?", quality = "basic"},
+        {name = "Debt: The First 5000 Years", author = "David Graeber", genre = "Anthropology / Economy", quality = "good"},
         {name = "Flowers for Algernon", author = "Daniel Keyes", genre = "Sci-Fi", quality = "good", review="algernon"},
         {name = "The Royal Game", author = "Stefan Zweig", genre = "Fiction", quality = "good", review="the-royal-game"},
         {name = "The Kiter Runner", author = "Khaled Hosseini", genre = "Historical Fiction", quality = "basic", review = "the-kite-runner"},
         {name = "Chaos Monkeys", author = "Antonio García Martínez", genre = "Biography", quality = "basic"},
         {name = "Freakonomics", author = "Stephen J. Dubner and Steven Levitt", genre = "Business", quality = "basic"},
         {name = "L'anomalie", author = "Hervé le Tellier", genre = "Sci-Fi", quality = "basic"},
+        {name = "How to Win Friends and Influence People", author = "Dale Carnegie", genre = "Self-improvement", quality = "basic"},
         {name = "Enlightenment Now", author = "Steven Pinker", genre = "Non-Fiction", quality = "basic"},
     ]
 
@@ -28,8 +32,9 @@ layout = "reading_list"
     year = 2020
     books = [
         {name = "Too Like the Lightning", author = "Ada Palmer", genre = "Sci-Fi", quality = "good"},
-        {name = "Homo Deus", author = "Yuval Noah Harari", genre = "History", quality = "basic"},
+        {name = "Leonardo da Vinci", author = "Walter Isaacson", genre = "Biography", quality = "basic"},
         {name = "Une forme de guerre", author = "Iain M. Banks", genre = "Sci-Fi", quality = "basic"},
+        {name = "Homo Deus", author = "Yuval Noah Harari", genre = "History", quality = "basic"},
         {name = "The Ride of a Lifetime", author = "Robert Iger", genre = "Business", quality = "good", review = "ride-of-a-lifetime"},
         {name = "Assassin's Apprentice", author = "Robin Hobb", genre = "Fantasy", quality = "basic"},
         {name = "Simple & Direct", author = "Jacques Barzun", genre = "Writing", quality = "basic"},

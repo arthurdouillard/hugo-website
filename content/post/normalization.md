@@ -36,7 +36,7 @@ It is *extremely* common to normalize the input
 [(lecun-98b)](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf), especially
 for computer vision tasks. Three normalization schemes are often seen:
 
-1. Normalizing the pixel values between 0 and 1:
+1. Normalizing the pixel values between 0 and 1 (as [Torch's ToTensor does](https://pytorch.org/vision/stable/transforms.html)):
 
 ```python
 img /= 255.
@@ -47,18 +47,6 @@ img /= 255.
 ```python
 img /= 127.5
 img -= 1.
-```
-
-3. Normalizing according to the dataset mean & standard deviation (as [Torch does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L52-L55)):
-
-```python
-img /= 255.
-mean = [0.485, 0.456, 0.406] # Here it's ImageNet statistics
-std = [0.229, 0.224, 0.225]
-
-for i in range(3): # Considering an ordering NCHW (batch, channel, height, width)
-    img[i, :, :] -= mean[i]
-    img[i, :, :] /= std[i]
 ```
 
 Why is it recommended? Let's take a neuron, where:
@@ -74,6 +62,21 @@ the weights. If the gradient is big, you should reduce the learning rate.
 However you usually have different gradient magnitudes in a same batch. Normalizing
 the image to smaller pixel values is a cheap price to pay while making easier to
 tune an optimal learning rate for input images.
+
+Furthermore, we usually apply a second type of normalization after the first one, called **constrast normalization**.
+As the name imply it normalize the contrast so that the model doesn't learn this spurious correlation.
+To do so, we normalize according to the dataset mean & standard deviation (as [Torch does](https://github.com/keras-team/keras-applications/blob/master/keras_applications/imagenet_utils.py#L52-L55)):
+
+```python
+img /= 255.
+mean = [0.485, 0.456, 0.406] # Here it's ImageNet statistics
+std = [0.229, 0.224, 0.225]
+
+for i in range(3): # Considering an ordering NCHW (batch, channel, height, width)
+    img[i, :, :] -= mean[i]
+    img[i, :, :] /= std[i]
+```
+
 
 ### 1. Batch Normalization
 
@@ -252,3 +255,5 @@ LN was conceived for RNNs, IN for style transfer, and GN for CNNs.
 
 Finally weigh norm and cosine norm normalize the network's weight instead of simply
 the input data.
+
+EDIT: this post has been recommended by [FastAI](https://forums.fast.ai/t/lesson-6-official-resources-and-updates/31441)!

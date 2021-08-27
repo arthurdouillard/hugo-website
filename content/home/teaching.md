@@ -14,10 +14,11 @@ subtitle = ""
 weight = 6
 
 [[teaching.teaching]]
-  title = "Deep Learning"
+  title = "Deep Learning for Computer Visionn"
   place = "EPITA"
   date = "Fall 2019 - ..."
   role = "Lecturer"
+  links = [{ link = "deepcourse", link_label = "URL", ext = false, page = true}]
 
 [[teaching.teaching]]
   title = "Deep Learning for Computer Vision"

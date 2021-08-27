@@ -12,7 +12,8 @@ weight = 4
   place = "ContinualAI"
   date = "June 2021"
   links = [
-    { link = "2021-06_cv_talks.pdf", link_label = "PDF", ext = false }
+    { link = "2021-06_cv_talks.pdf", link_label = "PDF", ext = false },
+    { link = "https://youtu.be/XScUywEx4Pc", link_label = "Video", ext = true }
 
   ]
 

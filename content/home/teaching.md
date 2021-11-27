@@ -25,13 +25,14 @@ weight = 6
   place = "Sorbonne University"
   date = "Fall 2019 - ..."
   role = "Teacher Assistant"
-  links = [{ link = "rdfia", link_label = "URL", ext = false, page = true}]
+  links = [{ link = "https://rdfia.github.io/", link_label = "URL", ext = true, page = true}]
 
 [[teaching.teaching]]
   title = "Deep Learning for Computer Vision"
   place = "EPITA"
   date = "Fall 2018"
   role = "Teacher Assistant"
+  links = [{ link = "https://m2dsupsdlclass.github.io/lectures-labs/", link_label = "URL", ext = true, page = true}]
 
 [[teaching.teaching]]
   title = "C Programming"

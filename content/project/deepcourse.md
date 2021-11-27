@@ -6,7 +6,7 @@ date = 2021-08-26T00:00:00
 title = "DeepCourse"
 
 # Project summary to display on homepage.
-summary = "A course on Deep Learning for Computer Vision"s
+summary = "A course on Deep Learning for Computer Vision"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = ""

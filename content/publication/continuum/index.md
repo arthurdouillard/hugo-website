@@ -16,7 +16,7 @@ pretty_date = ""
 abstract_short = ""
 
 authors = ["Arthur Douillard",  "Timothée Lesort"]
-publication_origin = "CVPR CLVISION Findings 2021"
+publication_origin = "CVPR CLVISION Findings Workshop 2021"
 
 pdf = "https://arxiv.org/abs/2102.06253"
 project_page = false

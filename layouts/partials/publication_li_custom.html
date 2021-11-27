@@ -17,10 +17,11 @@
     <div class="ml-3">
       {{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
       {{ with $resource }}
-      {{ $image := .Resize "200x" }}
+      {{ $image := .Resize "400x" }}
       <img src="{{ $image.RelPermalink }}" itemprop="image">
       {{end}}
     </div>
+
 
     {{ $summary := "" }}
     {{ if .Params.abstract_short }}
@@ -36,7 +37,7 @@
     </div>
     {{ end }}
 
-    <div class="talk-links" style="margin-top: -20px">
+    <div class="talk-links" style="margin-top: 0px">
       {{ partial "publication_links" (dict "content" . "is_list" 1) }}
     </div><br />
   </div>

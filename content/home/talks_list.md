@@ -8,6 +8,15 @@ title = "Talks"
 weight = 4
 
 [[talks.talks]]
+  title = "Continual Semantic Segmentation"
+  place = "Paris Machine Learning Meetup"
+  date = "October 2021"
+  links = [
+    { link = "2021-06_cv_talks.pdf", link_label = "PDF", ext = false },
+
+  ]
+
+[[talks.talks]]
   title = "Continual Semantic Segmentation and Object Rehearsal"
   place = "ContinualAI"
   date = "June 2021"

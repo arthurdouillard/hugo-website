@@ -15,6 +15,11 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2021
     books = [
+        {name = "Le voyant d'Etampes", author = "Abel Quentin", genre = "Fiction", quality = "good"},
+        {name = "Dopamine: The Molecule of More", author = "Daniel Lieberman and Michael E. Long", genre = "Pop-Science", quality = "basic"},
+        {name = "The man who solved the market", author = "Gregory Zuckerman", genre = "Biography", quality = "basic"},
+        {name = "How to avoid a climate disaster", author = "Bill Gates", genre = "Ecology", quality = "basic"},
+        {name = "Le Comte de Monte-Cristo", author = "Alexandre Dumas", genre = "Adventure", quality = "good"},
         {name = "The Four Agreements: A Practical Guide to Personal Freedom", author = "Don Miguel Ruiz", genre = "Self-improvement", quality = "basic"},
         {name = "Morales Provisoires", author = "Raphaël Enthoven", genre = "Philosophy?", quality = "basic"},
         {name = "Debt: The First 5000 Years", author = "David Graeber", genre = "Anthropology / Economy", quality = "good"},

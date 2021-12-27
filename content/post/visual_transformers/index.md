@@ -119,29 +119,76 @@ bigger than expected. We simply use again a linear transformation $W_o \in \math
 
 $$Z = Z' W_o$$
 
-Here is a simplified version in PyTorch:
+Here is a simplified version in PyTorch, first with a single head:
 
 ```python
 class SelfAttention(nn.Module):
-    def __init__(self, dim, num_heads=8):
-        super().__init__()
-        self.Wq = nn.Linear(dim, num_heads * dim, bias=False)
-        self.Wk = nn.Linear(dim, num_heads * dim, bias=False)
-        self.Wv = nn.Linear(dim, num_heads * dim, bias=False)
-        self.Wo = nn.Linear(num_heads * dim, dim)
+  def __init__(self, embed_dim):
+    super().__init__()
 
-    def forward(self, x):
-        # X is of shape (Batch size, number of tokens, embedding dimension)
-        B, T, D = x.shape
+    self.scale = embed_dim ** -0.5
+    self.W_q = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.W_k = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.W_v = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.W_o = nn.Linear(embed_dim, embed_dim)
 
-        q = self.Wq(x) # (Batch size, number of tokens, number of heads * embedding dimension)
-        k = self.Wk(x)
-        v = self.Wv(x)
+  def forward(self, x):
+    # x is of shape (Batch size, nb of tokens, embedding dimension)
+    B, N, C = x.shape
 
-        a = torch.softmax(torch.bmm(q, k.permute(1, 2)) / math.sqrt(D), dim=-1)
-        z = torch.bmm(a, v)
+    q = self.W_q(x)  # (Batch size, nb of tokens, embedding dimension)
+    k = self.W_k(x)
+    v = self.W_v(x)
 
-        return self.Wo(z)  # (Batch size, number of tokens, embedding dimension)
+    attention = torch.matmul(q, k.transpose(1, 2)) * self.scale
+    attention = torch.softmax(attention, dim=-1)  # (Batch size, nb of tokens, nb of tokens)
+
+    x = torch.matmul(attention, v)  # (Batch size, nb of tokens, embedding dimension)
+    x = self.W_o(x)
+
+    return x
+```
+
+And then, slightly more complex, with multi-heads:
+
+```python
+class MultiHeadsSelfAttention(nn.Module):
+  def __init__(self, embed_dim, num_heads):
+    super().__init__()
+
+    head_dim = embed_dim // num_heads
+    self.scale = head_dim ** -0.5
+    self.num_heads = num_heads
+
+    self.q = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.k = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.v = nn.Linear(embed_dim, embed_dim, bias=False)
+    self.projection = nn.Linear(embed_dim, embed_dim)
+
+  def forward(self, x):
+    B, N, C = x.shape
+
+    q = self.q(x)
+    k = self.k(x)
+    v = self.v(x)
+
+    q = q.reshape(B, N, self.num_heads, C // self.num_heads)
+    k = k.reshape(B, N, self.num_heads, C // self.num_heads)
+    v = v.reshape(B, N, self.num_heads, C // self.num_heads)
+
+    q = q.permute(0, 2, 1, 3)
+    k = k.permute(0, 2, 1, 3)
+    v = v.permute(0, 2, 1, 3)
+
+    attention = torch.matmul(q, k.transpose(2, 3)) * self.scale
+    attention = torch.softmax(attention, dim=-1)
+
+    x = torch.matmul(attention, v)  # B, H, N, Hd
+    x = x.permute(0, 2, 1, 3)
+    x = x.reshape(B, N, C)
+    x = self.projection(x)
+
+    return x
 ```
 
 *Note that in practice, to make the dimension of $Q$/$K$/$V$ independent to the number

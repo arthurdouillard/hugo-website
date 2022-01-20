@@ -13,12 +13,18 @@ type = "mylayouts"
 layout = "reading_list"
 
 [[reading.reading]]
+    year = 2022
+    books = [
+        {name = "L'Amour sous algorithme", author = "Judith Duportail", genre = "Reporting", quality = "basic", review="tinder"},
+        {name = "This Is How You Lose the Time War", author = "Amal El-Mohtar and Max Gladstone", genre = "Sci-Fi", quality = "good", review="time-war-love"},
+    ]
+
+[[reading.reading]]
     year = 2021
     books = [
-        {name = "This Is How You Lose the Time War", author = "Amal El-Mohtar and Max Gladstone", genre = "Sci-Fi", quality = "basic"},
         {name = "Les vertus de l'échec", author = "Charles Pépin", genre = "Self-improvement", quality = "basic"},
         {name = "Agent Running in the Field", author = "John le Carré", genre = "Spy", quality = "basic"},
-        {name = "Le voyant d'Etampes", author = "Abel Quentin", genre = "Fiction", quality = "good"},
+        {name = "Le voyant d'Etampes", author = "Abel Quentin", genre = "Fiction", quality = "basic"},
         {name = "Dopamine: The Molecule of More", author = "Daniel Lieberman and Michael E. Long", genre = "Pop-Science", quality = "basic"},
         {name = "The man who solved the market", author = "Gregory Zuckerman", genre = "Biography", quality = "basic"},
         {name = "How to avoid a climate disaster", author = "Bill Gates", genre = "Ecology", quality = "basic"},

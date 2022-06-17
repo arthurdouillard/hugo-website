@@ -16,7 +16,7 @@ pretty_date = ""
 abstract_short = ""
 
 authors = ["Arthur Douillard",  "Yifu Chen", "Arnaud Dapogny", "Matthieu Cord"]
-publication_origin = "arXiv"
+publication_origin = "Under review at TPAMI"
 
 pdf = "https://arxiv.org/abs/2106.15287"
 project_page = false

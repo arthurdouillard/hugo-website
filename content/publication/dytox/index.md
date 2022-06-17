@@ -16,7 +16,7 @@ pretty_date = ""
 abstract_short = ""
 
 authors = ["Arthur Douillard",  "Alexandre Ramé", "Guillaume Couairon", "Matthieu Cord"]
-publication_origin = "arXiv"
+publication_origin = "CVPR 2022"
 
 pdf = "https://arxiv.org/abs/2111.11326"
 project_page = false

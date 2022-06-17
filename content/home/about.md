@@ -9,20 +9,20 @@ weight = 1
 
 # List your experience.
 [[experience.experiences]]
+  role = "(soon) Research Scientist"
+  company = "DeepMind"
+  url = "https://www.deepmind.com/"
+
+[[experience.experiences]]
   role = "Research Scientist"
   company = "Heuritech"
   url = "https://www.heuritech.com"
 
-[[experience.experiences]]
-  role = "Research Engineer intern"
-  company = "Dataiku"
-  url = "https://www.dataiku.com"
-
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD student"
-  institution = "Sorbonne University (LIP6)"
+  course = "PhD"
+  institution = "Sorbonne University (ex-UPMC)"
   year = ""
   url = "https://www.lip6.fr/?LANG=en"
 
@@ -36,10 +36,8 @@ weight = 1
 
 # About me
 
-I'm a coder, a scientist, and a teacher. Currently a PhD student at Sorbonne
-University Professor Matthieu Cord, I research how to train Deep Neural Networks
-continually. I'm also working part-time as a Research Scientist at Heuritech,
-deploying convolution nets for fashion.
+I'm a coder, a scientist, and a teacher. I've defended my PhD in Deep Learning
+from Sorbonne Université in June 2022 and I research how to train Deep Neural
+Networks continually. I'll be joining DeepMind in August as a Research Scientist.
 
-I am also a lecturer in Parisian engineering school EPITA where I teach Computer Vision.
 I've released this course for free at [deepcourse](https://arthurdouillard.com/deepcourse/).

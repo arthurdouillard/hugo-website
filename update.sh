@@ -3,6 +3,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
+# https://github.com/gohugoio/hugo/releases/tag/v0.49.2
 /usr/local/bin/hugo-0.49.2/hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder

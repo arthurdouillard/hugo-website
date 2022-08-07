@@ -9,7 +9,7 @@ weight = 1
 
 # List your experience.
 [[experience.experiences]]
-  role = "(soon) Research Scientist"
+  role = "Research Scientist"
   company = "DeepMind"
   url = "https://www.deepmind.com/"
 
@@ -36,8 +36,9 @@ weight = 1
 
 # About me
 
-I'm a coder, a scientist, and a teacher. I've defended my PhD in Deep Learning
-from Sorbonne Université in June 2022 and I research how to train Deep Neural
-Networks continually. I'll be joining DeepMind in August as a Research Scientist.
+I love learning continuously.
 
-I've released this course for free at [deepcourse](https://arthurdouillard.com/deepcourse/).
+Therefore I've created a [free course](https://arthurdouillard.com/deepcourse/) on deep learning for computer vision using Anki flashcards to improve my students' learning.
+
+While not trying to improve human learning, I'm working at DeepMind in London on
+Continual Learning for machines.

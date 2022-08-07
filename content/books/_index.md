@@ -15,7 +15,10 @@ layout = "reading_list"
 [[reading.reading]]
     year = 2022
     books = [
-        {name = " Good Economics for Hard Times: Better Answers to Our Biggest Problems", author = "Abhijit Banerjee and Esther Duflo", genre = "Economy", quality = "basic"},
+        {name = "Money Honnie", author = "Bertrand Badre", genre = "Economy", quality = "basic"},
+        {name = "Secondhand Time: The Last of the Soviets", author = "Svetlana Alexievich", genre = "Histoy", quality = "good"},
+        {name = "klara and the sun", author = "Kazuo Ishiguro", genre = "Sci-Fi", quality = "basic"},
+        {name = "Good Economics for Hard Times: Better Answers to Our Biggest Problems", author = "Abhijit Banerjee and Esther Duflo", genre = "Economy", quality = "basic"},
         {name = "La Plus Secrète Mémoire des Hommes", author = "Mohamed Mbougar Sarr", genre = "fiction", quality = "basic", review="secrete-memoire"},
         {name = "Moonwalking with Einstein: The Art and Science of Remembering Everything", author = "Joshua Foer", genre = "Non-fiction", quality = "basic", review="memory-palace"},
         {name = "L'Amour sous algorithme", author = "Judith Duportail", genre = "Reporting", quality = "basic", review="tinder"},
